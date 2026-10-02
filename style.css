@@ -1,0 +1,299 @@
+/* ===== Token ===== */
+:root {
+  --bg: #04070d;
+  --panel: rgba(6, 14, 28, 0.86);
+  --neon: #1fb6ff;
+  --neon-bright: #8fdcff;
+  --text: #d9eaf7;
+  --muted: #7f9bb3;
+  --line: rgba(31, 182, 255, 0.35);
+  --danger: #ff5c7a;
+
+  --font-display: "Orbitron", "Segoe UI", sans-serif;
+  --font-body: "JetBrains Mono", "Consolas", "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  background-color: var(--bg);
+  /* Grid hexagon putih tipis */
+  background-image:
+    radial-gradient(ellipse at 50% -10%, rgba(31, 182, 255, 0.14), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50L0 16L28 0L56 16L56 50L28 66L28 100' fill='none' stroke='white' stroke-opacity='0.08'/%3E%3Cpath d='M28 0L28 34L0 50L0 84L28 100L56 84L56 50L28 34' fill='none' stroke='white' stroke-opacity='0.08'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+}
+
+[hidden] { display: none !important; }
+
+/* ===== Tipografi ===== */
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin: 0;
+  color: var(--neon-bright);
+  text-shadow: 0 0 10px rgba(31, 182, 255, 0.6);
+  animation: text-pulse 4.5s ease-in-out infinite;
+}
+
+.muted { color: var(--muted); margin: 0; }
+
+.hint {
+  min-height: 1.7em;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.error {
+  min-height: 1.7em;
+  margin: 0;
+  color: var(--danger);
+  font-size: 13px;
+}
+
+/* ===== Layout ===== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 32px;
+  background: rgba(4, 7, 13, 0.9);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--neon-bright);
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--muted);
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px 64px;
+}
+
+.screen { width: 100%; display: flex; justify-content: center; }
+
+.panel {
+  width: 100%;
+  padding: 36px 40px;
+  background: var(--panel);
+  border: 1px solid var(--neon);
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(31, 182, 255, 0.35), inset 0 0 28px rgba(31, 182, 255, 0.06);
+  animation: box-pulse 4.5s ease-in-out infinite;
+}
+
+.panel-login {
+  max-width: 440px;
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panel-module { max-width: 960px; }
+
+/* ===== Login ===== */
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.input-id {
+  width: 100%;
+  padding: 12px 16px;
+  color: var(--neon-bright);
+  background: rgba(31, 182, 255, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-size: 28px;
+  text-align: center;
+}
+
+.input-id:focus {
+  outline: none;
+  border-color: var(--neon);
+  box-shadow: 0 0 14px rgba(31, 182, 255, 0.55);
+}
+
+#login-form { display: flex; flex-direction: column; }
+#login-form .btn { margin-top: 8px; }
+
+/* ===== Modul ===== */
+.mod-title { font-size: 28px; outline: none; }
+
+.mod-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 14px 0 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.mod-counter {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--neon);
+  letter-spacing: 0.08em;
+}
+
+.mod-status {
+  padding: 2px 12px;
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.mod-status.is-active {
+  color: var(--neon-bright);
+  border-color: var(--neon);
+  box-shadow: 0 0 10px rgba(31, 182, 255, 0.45);
+}
+
+.mod-fields { margin: 0 0 24px; display: flex; flex-direction: column; gap: 22px; }
+
+.mod-field {
+  padding-left: 18px;
+  border-left: 2px solid var(--neon);
+}
+
+.mod-field dt {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--neon);
+  margin-bottom: 4px;
+}
+
+.mod-field dd { margin: 0; max-width: 78ch; }
+
+.mod-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+/* ===== Tombol ===== */
+.btn {
+  padding: 11px 22px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover:not(:disabled) {
+  color: var(--neon-bright);
+  border-color: var(--neon);
+  box-shadow: 0 0 14px rgba(31, 182, 255, 0.6);
+}
+
+.btn:focus-visible,
+.input-id:focus-visible {
+  outline: 2px solid var(--neon-bright);
+  outline-offset: 2px;
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  color: #03121c;
+  background: var(--neon);
+  border-color: var(--neon);
+  font-weight: 700;
+}
+
+.btn-primary:hover:not(:disabled) {
+  color: #03121c;
+  background: var(--neon-bright);
+  border-color: var(--neon-bright);
+  box-shadow: 0 0 20px rgba(143, 220, 255, 0.8);
+}
+
+.btn-ghost { padding: 7px 16px; font-size: 13px; }
+
+/* ===== Dialog ===== */
+.dialog {
+  width: min(460px, calc(100% - 32px));
+  padding: 0;
+  color: var(--text);
+  background: #060e1c;
+  border: 1px solid var(--neon);
+  border-radius: 4px;
+  box-shadow: 0 0 28px rgba(31, 182, 255, 0.55);
+}
+
+.dialog::backdrop { background: rgba(2, 4, 8, 0.8); }
+
+.dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 32px;
+}
+
+.dialog-title { font-size: 20px; }
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* ===== Animasi denyut neon ===== */
+@keyframes box-pulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(31, 182, 255, 0.25), inset 0 0 22px rgba(31, 182, 255, 0.04); }
+  50%      { box-shadow: 0 0 30px rgba(31, 182, 255, 0.6),  inset 0 0 34px rgba(31, 182, 255, 0.09); }
+}
+
+@keyframes text-pulse {
+  0%, 100% { text-shadow: 0 0 6px rgba(31, 182, 255, 0.4); }
+  50%      { text-shadow: 0 0 16px rgba(31, 182, 255, 0.95); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel, .display { animation: none; }
+}

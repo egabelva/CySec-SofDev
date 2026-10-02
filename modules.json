@@ -1,0 +1,2002 @@
+[
+ {
+  "nomor": 1,
+  "judul": "Audit Diri dan Jurnal Belajar Terstruktur",
+  "fokus": "Software Development + AI",
+  "materi": "Pengetahuan yang terfragmentasi perlu dipetakan dulu. Jurnal membuat kemajuan terlihat.",
+  "praktik": "Buka VS Code, buat folder belajar-250. Tulis peta-skill.md berisi skill (HTML, JS, PHP, Git, terminal, jaringan, Linux, security) dengan nilai 1–5 dan bukti nyata. Buat jurnal.md dengan template: apa yang dikerjakan, error, pelajaran.",
+  "hasil": "Baseline skill tertulis dan format jurnal yang dipakai sampai Modul 250."
+ },
+ {
+  "nomor": 2,
+  "judul": "WSL2 dan Ubuntu: Linux di Dalam Windows",
+  "fokus": "Linux",
+  "materi": "WSL2 menjalankan Linux sungguhan berdampingan dengan Windows tanpa mengganti OS utama.",
+  "praktik": "Aktifkan WSL2, pasang Ubuntu, buat user, jalankan sudo apt update, cek uname -a dan cat /etc/os-release. Buka folder proyek dari VS Code lewat ekstensi WSL.",
+  "hasil": "Lingkungan Linux siap pakai yang terhubung ke VS Code."
+ },
+ {
+  "nomor": 3,
+  "judul": "Navigasi Filesystem Linux",
+  "fokus": "Linux",
+  "materi": "Hierarki direktori (/, /home, /etc, /var, /tmp), path absolut vs relatif.",
+  "praktik": "Pakai pwd, ls -la, cd, tree, mkdir -p, touch. Bangun struktur folder latihan, lalu jelajahi /etc dan /var/log (hanya baca).",
+  "hasil": "Bergerak lancar di terminal dan tahu fungsi direktori utama."
+ },
+ {
+  "nomor": 4,
+  "judul": "Manipulasi File: cp, mv, rm, find, Wildcard",
+  "fokus": "Linux",
+  "materi": "Operasi file, wildcard, dan bahaya rm -rf.",
+  "praktik": "Salin, pindahkan, ganti nama, dan hapus file di folder latihan. Cari dengan find (nama, ukuran, waktu ubah). Uji wildcard *.txt dengan echo sebelum menghapus.",
+  "hasil": "Kebiasaan \"cek dulu, hapus kemudian\" dan kemampuan mencari file."
+ },
+ {
+  "nomor": 5,
+  "judul": "Pipe, Redirect, dan Filter Teks",
+  "fokus": "Linux",
+  "materi": "stdin/stdout/stderr, |, >, >>, 2>.",
+  "praktik": "Buat file 50 baris dengan loop, lalu rangkai head, tail, wc, sort, uniq -c, cut, grep. Simpan stderr ke file terpisah.",
+  "hasil": "Bisa merangkai perintah kecil menjadi pipeline."
+ },
+ {
+  "nomor": 6,
+  "judul": "Git Fondasi di Terminal",
+  "fokus": "Software Development + Linux",
+  "materi": "Repository, working tree, staging area, commit.",
+  "praktik": "git init di belajar-250, buat file, jalankan git status, add, commit, ubah file, git diff, git log --oneline. Tulis .gitignore.",
+  "hasil": "Siklus edit → stage → commit lancar dari terminal."
+ },
+ {
+  "nomor": 7,
+  "judul": "GitHub, SSH Key, dan Remote",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Remote repository dan autentikasi dengan key pair publik/privat.",
+  "praktik": "ssh-keygen -t ed25519 di WSL, tambahkan public key ke GitHub, uji ssh -T git@github.com. Buat repo privat, git remote add, git push, lalu git clone ke folder lain.",
+  "hasil": "Repo tersinkron dan paham mengapa private key tidak boleh dibagikan."
+ },
+ {
+  "nomor": 8,
+  "judul": "Dasar Keamanan: CIA, Aset, Ancaman, Risiko",
+  "fokus": "Cyber Security",
+  "materi": "Confidentiality, Integrity, Availability; asset, threat, vulnerability, risk.",
+  "praktik": "Daftar 10 aset digital milikmu (akun GitHub, repo, laptop, email). Untuk tiap aset tulis satu ancaman realistis, dampaknya, dan satu kontrol. Simpan sebagai threat-awal.md, lalu commit.",
+  "hasil": "Pola pikir \"aset → ancaman → kontrol\" untuk semua modul security."
+ },
+ {
+  "nomor": 9,
+  "judul": "Hash, Checksum, dan Integritas File",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Fungsi hash, efek avalanche, hash bukan enkripsi.",
+  "praktik": "sha256sum pada sebuah file, ubah satu karakter lalu bandingkan hash. Verifikasi checksum file unduhan resmi (misalnya ISO Ubuntu). Tulis 3 perbedaan hash dan enkripsi.",
+  "hasil": "Memahami integritas file dan cara memverifikasinya."
+ },
+ {
+  "nomor": 10,
+  "judul": "AI sebagai Tutor: Bertanya, Memverifikasi, Mencatat",
+  "fokus": "AI",
+  "materi": "AI menjelaskan dan menyarankan, tetapi bisa salah. Verifikasi tetap tugasmu.",
+  "praktik": "Minta AI menjelaskan grep, find, dan pipe dengan 3 contoh. Jalankan semua contoh di terminal, cocokkan dengan man. Catat satu bagian jawaban yang kurang tepat atau belum kamu pahami di jurnal.md.",
+  "hasil": "Pola kerja \"tanya → coba → verifikasi → catat\"."
+ },
+ {
+  "nomor": 11,
+  "judul": "Python di WSL: venv, Variabel, Tipe Data, Input",
+  "fokus": "Software Development",
+  "materi": "Python sebagai bahasa utama latihan (sintaksnya mirip JS yang sudah kamu kenal) dan virtual environment.",
+  "praktik": "Cek python3 --version, buat dan aktifkan venv. Tulis script yang membaca input, memakai int/str/float/bool, dan mencetak dengan f-string. Bandingkan dengan padanannya di JavaScript.",
+  "hasil": "Environment Python terisolasi dan script input-proses-output pertama."
+ },
+ {
+  "nomor": 12,
+  "judul": "Python: Kondisi dan Perulangan",
+  "fokus": "Software Development",
+  "materi": "if/elif/else, for, while, break, continue.",
+  "praktik": "Tulis game tebak angka dan pemeriksa kekuatan password sederhana (panjang, huruf, angka).",
+  "hasil": "Kontrol alur program lancar."
+ },
+ {
+  "nomor": 13,
+  "judul": "Python: Fungsi dan Modul",
+  "fokus": "Software Development",
+  "materi": "Fungsi, parameter, return, import, struktur file proyek.",
+  "praktik": "Pecah script Modul 12 menjadi fungsi, pindahkan ke utils.py, import, tambahkan docstring, dan pakai if __name__ == \"__main__\".",
+  "hasil": "Kode yang dapat dipakai ulang dan tersusun."
+ },
+ {
+  "nomor": 14,
+  "judul": "Python: List, Dictionary, Set",
+  "fokus": "Software Development",
+  "materi": "Koleksi data dan kapan masing-masing dipakai.",
+  "praktik": "Dari 20 data \"pengguna\" (dict): filter, urutkan, hitung frekuensi, buang duplikat dengan set. Pakai list comprehension.",
+  "hasil": "Mengolah data terstruktur dengan koleksi bawaan Python."
+ },
+ {
+  "nomor": 15,
+  "judul": "Python: File I/O dan Exception",
+  "fokus": "Software Development",
+  "materi": "Baca/tulis file, with, try/except, JSON.",
+  "praktik": "Baca file teks dan JSON, tulis hasil ke file baru. Tangani file tidak ada dan JSON rusak dengan exception yang spesifik.",
+  "hasil": "Program yang tidak crash karena input atau file bermasalah."
+ },
+ {
+  "nomor": 16,
+  "judul": "Never Trust Input: Validator CLI",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Semua input tidak tepercaya. Allowlist lebih baik daripada denylist.",
+  "praktik": "Buat fungsi validasi username, email, dan umur. Uji dengan input kosong, sangat panjang, karakter khusus, spasi, unicode, dan angka negatif. Catat hasil uji di jurnal.",
+  "hasil": "Validator dengan aturan jelas dan daftar kasus uji pertama."
+ },
+ {
+  "nomor": 17,
+  "judul": "Permission Linux: rwx, chmod, chown",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Model permission user/group/other, notasi simbolik dan oktal.",
+  "praktik": "Buat file dan script, ubah dengan chmod (755, 644, 600), amati ls -l dan umask. Simpan \"private key\" palsu dengan mode 600 dan coba bukti kenapa harus ketat.",
+  "hasil": "Bisa membaca dan mengatur permission serta paham pentingnya 600 untuk file rahasia."
+ },
+ {
+  "nomor": 18,
+  "judul": "Users, Groups, sudo, dan Least Privilege",
+  "fokus": "Linux + Cyber Security",
+  "materi": "User, grup, root, sudo, prinsip hak akses minimum.",
+  "praktik": "Buat user labuser dan grup labgroup, folder bersama dengan permission grup. Uji akses dengan su dan sudo -u. Baca /etc/passwd dan /etc/group.",
+  "hasil": "Simulasi hak akses terbatas dan pemahaman least privilege."
+ },
+ {
+  "nomor": 19,
+  "judul": "Proses, Sinyal, dan Job Control",
+  "fokus": "Linux",
+  "materi": "PID, proses induk/anak, foreground/background, sinyal.",
+  "praktik": "Jalankan script Python yang berjalan lama, lihat dengan ps aux dan top, jalankan di background (&, jobs, fg), hentikan dengan kill dan Ctrl+C. Tangani SIGINT di Python.",
+  "hasil": "Mengelola dan menghentikan proses dengan benar."
+ },
+ {
+  "nomor": 20,
+  "judul": "Script Analisis Log Sederhana",
+  "fokus": "Software Development + Linux + Cyber Security",
+  "materi": "Log adalah sumber bukti, parsing teks dengan Python.",
+  "praktik": "Buat auth-sample.log palsu berisi login berhasil/gagal. Tulis script Python yang menghitung gagal login per IP dan menampilkan 3 teratas. Cocokkan hasilnya dengan pipeline grep | cut | sort | uniq -c.",
+  "hasil": "Script analisis log pertama yang hasilnya terverifikasi dua cara."
+ },
+ {
+  "nomor": 21,
+  "judul": "AI untuk Debug Traceback: Prediksi Dulu",
+  "fokus": "AI + Software Development",
+  "materi": "Membaca traceback dari bawah ke atas. AI membantu setelah kamu mencoba berpikir.",
+  "praktik": "Buat 3 bug sengaja (typo, tipe data, index). Tulis dugaanmu dulu, baru minta AI menjelaskan. Bandingkan, perbaiki, commit dengan pesan jelas.",
+  "hasil": "Debugging mandiri dulu, AI sebagai pembanding."
+ },
+ {
+  "nomor": 22,
+  "judul": "Git Branch, Merge, dan Conflict",
+  "fokus": "Software Development",
+  "materi": "Branch untuk eksperimen, merge, penyelesaian conflict.",
+  "praktik": "Buat branch fitur-a dan fitur-b yang mengubah baris yang sama, merge, selesaikan conflict di VS Code. Lihat git log --graph, hapus branch.",
+  "hasil": "Percaya diri dengan branching dan conflict."
+ },
+ {
+  "nomor": 23,
+  "judul": "Secrets, .env, dan .gitignore",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Secret tidak boleh masuk repo dan riwayat Git menyimpan segalanya.",
+  "praktik": "Commit .env berisi key dummy, temukan di git log -p, hapus dari tracking, masukkan ke .gitignore, baca variabel dengan os.environ. Tulis mengapa secret yang pernah bocor harus diganti.",
+  "hasil": "Pola penyimpanan secret yang benar dan paham bahaya riwayat commit."
+ },
+ {
+  "nomor": 24,
+  "judul": "Bash Scripting Dasar",
+  "fokus": "Linux + Software Development",
+  "materi": "Variabel, argumen, if, for, exit code.",
+  "praktik": "Tulis backup.sh yang menerima folder sumber, membuat salinan berstempel waktu, dan mengecek exit code. Beri izin eksekusi, uji dengan argumen salah.",
+  "hasil": "Script Bash berguna yang menangani kesalahan dasar."
+ },
+ {
+  "nomor": 25,
+  "judul": "Checkpoint 1: Mini-Lab Terpadu",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menggabungkan alat dari Modul 1–24.",
+  "praktik": "Buat repo baru berisi script Python pemeriksa log yang memakai validator, dipanggil script Bash, dengan permission benar, .env tidak ter-commit, dan README. Push ke GitHub. Minta AI mereview README, lalu putuskan saran mana yang kamu terima dan kenapa.",
+  "hasil": "Repo kecil yang rapi sebagai bukti fondasi."
+ },
+ {
+  "nomor": 26,
+  "judul": "Alamat IP, Gateway, dan Peta Jaringan Lokal",
+  "fokus": "Networking + Linux",
+  "materi": "IP privat vs publik, gateway, interface.",
+  "praktik": "Jalankan ip addr, ip route, ipconfig (Windows), ping ke gateway dan localhost. Tulis peta jaringan rumahmu (perangkat, IP, gateway).",
+  "hasil": "Tahu IP perangkat sendiri dan jalur keluar ke internet."
+ },
+ {
+  "nomor": 27,
+  "judul": "IPv4, CIDR, dan Subnet Praktis",
+  "fokus": "Networking",
+  "materi": "Notasi /24, /16, jumlah host, dan cara menentukan dua IP satu jaringan atau tidak.",
+  "praktik": "Gunakan modul Python ipaddress untuk menjawab 10 pertanyaan subnet (misalnya apakah 192.168.1.10 dan 192.168.1.200 satu jaringan pada /24 dan /25). Tulis fungsi pengecek.",
+  "hasil": "Bisa membaca CIDR dan memutuskan dua host satu jaringan atau tidak."
+ },
+ {
+  "nomor": 28,
+  "judul": "MAC, ARP, dan Model Lapisan Jaringan",
+  "fokus": "Networking",
+  "materi": "Lapisan link, IP, transport, aplikasi; fungsi ARP.",
+  "praktik": "Lihat MAC dengan ip link, tabel ARP dengan ip neigh atau arp -a, ping perangkat lain di LAN lalu amati perubahan tabel. Petakan 5 tool yang sudah kamu pakai ke lapisannya.",
+  "hasil": "Peta mental lapisan jaringan yang terikat pada alat nyata."
+ },
+ {
+  "nomor": 29,
+  "judul": "Port, TCP, UDP, dan Socket Listening",
+  "fokus": "Networking + Linux",
+  "materi": "Port, perbedaan TCP dan UDP, state koneksi.",
+  "praktik": "Jalankan python3 -m http.server 8000, cek dengan ss -tulpn, akses dari browser, hentikan. Jalankan listener nc -l dan hubungkan klien. Bedakan LISTEN dan ESTABLISHED.",
+  "hasil": "Tahu layanan apa yang membuka port di mesin sendiri."
+ },
+ {
+  "nomor": 30,
+  "judul": "DNS: dig, nslookup, dan hosts",
+  "fokus": "Networking",
+  "materi": "Resolusi nama, record A/AAAA/CNAME/MX/TXT, cache.",
+  "praktik": "Gunakan dig dan nslookup untuk domain publik, bandingkan dua resolver. Edit /etc/hosts untuk memetakan app.lab ke 127.0.0.1 lalu akses.",
+  "hasil": "Memahami alur nama → IP dan cara mengujinya."
+ },
+ {
+  "nomor": 31,
+  "judul": "Routing Dasar, NAT, dan traceroute",
+  "fokus": "Networking",
+  "materi": "Default route, hop, NAT di router rumah, DHCP lease.",
+  "praktik": "Jalankan traceroute (atau tracert) ke domain publik dan baca hop. Bandingkan IP privat dan publik. Tulis dengan kata sendiri perjalanan paket dari laptopmu ke internet.",
+  "hasil": "Narasi lengkap perjalanan paket keluar rumah."
+ },
+ {
+  "nomor": 32,
+  "judul": "Client/Server dengan Python Socket",
+  "fokus": "Software Development + Networking",
+  "materi": "Socket, bind, listen, accept, connect.",
+  "praktik": "Tulis server echo TCP dan klien di Python, jalankan di dua terminal. Tambahkan penanganan banyak pesan dan koneksi putus. Amati dengan ss.",
+  "hasil": "Memahami bahwa HTTP hanyalah protokol di atas socket seperti ini."
+ },
+ {
+  "nomor": 33,
+  "judul": "Wireshark: Membaca Traffic Lokal",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Capture paket, display filter, three-way handshake.",
+  "praktik": "Pasang Wireshark (dengan Npcap), tangkap traffic server dari Modul 32 pada mesinmu sendiri. Filter tcp.port==..., temukan SYN/SYN-ACK/ACK dan payload teks. Tangkap juga satu query DNS.",
+  "hasil": "Melihat paket nyata dari aplikasi buatan sendiri."
+ },
+ {
+  "nomor": 34,
+  "judul": "HTTP Request dan Response dengan curl",
+  "fokus": "Networking + Software Development",
+  "materi": "Method, header, status code, body.",
+  "praktik": "Jalankan server lokal, kirim curl -v GET dan POST, ubah header, amati 200/301/404/405. Bandingkan dengan capture Wireshark.",
+  "hasil": "Bisa membaca dan menulis request HTTP mentah."
+ },
+ {
+  "nomor": 35,
+  "judul": "DevTools Network: Header, Cookie, Status Code",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Inspeksi request browser, cookie, cache.",
+  "praktik": "Buka halaman lokal buatanmu, pakai tab Network dan Application. Lihat request, header, dan atur cookie manual. Salin request sebagai curl lalu jalankan ulang di terminal.",
+  "hasil": "Browser sebagai alat observasi traffic aplikasi."
+ },
+ {
+  "nomor": 36,
+  "judul": "HTTPS dan TLS dengan Sertifikat Self-Signed Lokal",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Enkripsi transport, sertifikat, CA, peringatan browser.",
+  "praktik": "Buat sertifikat dengan openssl req -x509, jalankan server HTTPS Python, buka di browser dan baca detail sertifikat. Bandingkan capture Wireshark HTTP vs HTTPS.",
+  "hasil": "Memahami apa yang dilindungi dan tidak dilindungi TLS."
+ },
+ {
+  "nomor": 37,
+  "judul": "Firewall Dasar: Rule Inbound di Windows",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Rule allow/deny, arah inbound/outbound, urutan evaluasi.",
+  "praktik": "Di Windows Defender Firewall with Advanced Security, buat rule inbound untuk server Python port 8000: blokir, uji, lalu izinkan dan uji lagi (dari HP di Wi-Fi yang sama atau dari WSL).",
+  "hasil": "Mengontrol port yang boleh diakses dan memverifikasinya."
+ },
+ {
+  "nomor": 38,
+  "judul": "AI Membaca Dokumentasi dan RFC",
+  "fokus": "AI + Networking",
+  "materi": "Dokumentasi resmi adalah sumber kebenaran. AI membantu merangkum.",
+  "praktik": "Buka halaman MDN tentang HTTP caching atau status code. Minta AI merangkum dan membuat 3 pertanyaan latihan. Jawab sendiri, uji klaim AI dengan curl ke server lokal, tandai klaim yang tidak cocok dengan dokumentasi.",
+  "hasil": "Kebiasaan menjadikan dokumentasi sebagai rujukan utama."
+ },
+ {
+  "nomor": 39,
+  "judul": "HTML Form: GET vs POST dan Data di Jaringan",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Form, method, encoding, data di URL vs body.",
+  "praktik": "Buat halaman HTML dengan form login palsu, kirim ke server Python sederhana. Bandingkan GET vs POST di DevTools dan Wireshark, amati di mana data muncul (URL, log server, history browser).",
+  "hasil": "Paham mengapa data sensitif tidak boleh lewat GET."
+ },
+ {
+  "nomor": 40,
+  "judul": "JavaScript DOM dan Event Handling",
+  "fokus": "Software Development",
+  "materi": "DOM, event listener, textContent vs innerHTML.",
+  "praktik": "Buat daftar tugas kecil dengan tambah/hapus item. Render input yang berisi <b>teks</b> dengan textContent dan innerHTML, lihat bedanya.",
+  "hasil": "Fasih memanipulasi DOM dan mengenal sink yang berbahaya."
+ },
+ {
+  "nomor": 41,
+  "judul": "JavaScript Fetch, JSON, dan Async",
+  "fokus": "Software Development",
+  "materi": "Promise, async/await, fetch.",
+  "praktik": "Layani data.json dengan python3 -m http.server, ambil dengan fetch, render ke halaman. Tangani error jaringan dan respons non-200.",
+  "hasil": "Frontend mengambil data dari server dengan penanganan error."
+ },
+ {
+  "nomor": 42,
+  "judul": "Validasi Client-Side Bukan Pertahanan",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Validasi di browser untuk UX, validasi di server untuk keamanan.",
+  "praktik": "Buat form dengan maxlength dan pattern. Lewati dengan DevTools dan kirim data tak valid lewat curl. Catat kontrol mana yang hanya efektif di browser.",
+  "hasil": "Dasar mengapa server wajib memvalidasi ulang."
+ },
+ {
+  "nomor": 43,
+  "judul": "Flask: Route, Request, dan Response",
+  "fokus": "Software Development",
+  "materi": "Framework web, routing, status code.",
+  "praktik": "Pasang Flask di venv, buat 4 route (/, /hello/<nama>, /api/time, /echo). Uji dengan browser dan curl -v, baca log server.",
+  "hasil": "Server web Python pertama yang alurnya kamu pahami."
+ },
+ {
+  "nomor": 44,
+  "judul": "Flask: Form, Query String, dan JSON Body",
+  "fokus": "Software Development",
+  "materi": "request.args, request.form, request.get_json().",
+  "praktik": "Buat route yang menerima ketiganya dan mengembalikan JSON. Kirim dari form HTML, curl, dan fetch. Pasang validasi server dari Modul 16.",
+  "hasil": "Server menerima dan memvalidasi input dari berbagai sumber."
+ },
+ {
+  "nomor": 45,
+  "judul": "Jinja2 Template dan Auto-Escaping",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Template, escaping otomatis, filter |safe.",
+  "praktik": "Render nama pengguna di template, kirim <script> dan <b> sebagai nama, lihat hasil escape. Bandingkan dengan menyusun HTML manual dari string (di lab lokal saja).",
+  "hasil": "Memahami bagaimana framework membantu mencegah injeksi HTML."
+ },
+ {
+  "nomor": 46,
+  "judul": "XSS Reflected di Lab Lokal: Uji dan Perbaiki",
+  "fokus": "Cyber Security",
+  "materi": "Reflected XSS: input masuk ke HTML tanpa encoding.",
+  "praktik": "Di app Flask lokal buat route rentan, buktikan dengan payload tidak berbahaya (alert(document.domain)), analisis di DevTools. Perbaiki dengan template dan escaping, uji ulang.",
+  "hasil": "Siklus pertama temukan → pahami → perbaiki → uji ulang."
+ },
+ {
+  "nomor": 47,
+  "judul": "Security Headers dan CSP Dasar",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Referrer-Policy.",
+  "praktik": "Tambahkan header lewat after_request, aktifkan CSP ketat, lihat inline script terblokir di console, sesuaikan. Cek dengan DevTools dan curl -I.",
+  "hasil": "Lapisan pertahanan tambahan pada app sendiri."
+ },
+ {
+  "nomor": 48,
+  "judul": "apt, Paket, dan Verifikasi Sumber",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Package manager, repository, signing key, update vs upgrade.",
+  "praktik": "Jalankan apt search, show, install, remove, apt policy, dpkg -L, baca /etc/apt/sources.list*. Tulis mengapa curl ... | sudo bash dari sumber tak dikenal berisiko.",
+  "hasil": "Mengelola paket dengan sadar risiko sumbernya."
+ },
+ {
+  "nomor": 49,
+  "judul": "Services dan Logs: systemctl, journalctl, Nginx",
+  "fokus": "Linux",
+  "materi": "Service, unit, log sistem.",
+  "praktik": "Aktifkan systemd di WSL (/etc/wsl.conf) bila belum, pasang Nginx. Jalankan systemctl status/start/stop/enable, ubah halaman default, baca journalctl -u nginx dan /var/log/nginx/. Rusak config sengaja dan baca error dari nginx -t.",
+  "hasil": "Mengoperasikan service dan membaca lognya."
+ },
+ {
+  "nomor": 50,
+  "judul": "Membaca Access Log Nginx dengan grep dan awk",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Format access log, pola traffic normal vs aneh.",
+  "praktik": "Buat traffic ke Nginx lokal (browser, curl, loop). Hitung status code, URL teratas, dan IP dengan awk, sort, uniq. Temukan 404 berulang.",
+  "hasil": "Mengekstrak informasi dari log tanpa tool berat."
+ },
+ {
+  "nomor": 51,
+  "judul": "AI untuk Merangkum Log dengan Aman",
+  "fokus": "AI + Cyber Security",
+  "materi": "Log bisa memuat data sensitif dan teks berbahaya, jadi jangan ditempel mentah ke AI.",
+  "praktik": "Samarkan IP, token, dan username pada potongan log Modul 50 dengan sed. Minta AI merangkum dan menyebut pola anomali, lalu verifikasi dengan grep. Sisipkan satu baris log berisi \"abaikan instruksi sebelumnya\" dan amati bagaimana AI menanganinya.",
+  "hasil": "Kebiasaan sanitasi data dan kesadaran akan prompt injection."
+ },
+ {
+  "nomor": 52,
+  "judul": "Checkpoint 2: Lab Web Lokal Terdokumentasi",
+  "fokus": "Software Development + Cyber Security + Networking + Linux",
+  "materi": "Menggabungkan jaringan, HTTP, Flask, dan Nginx.",
+  "praktik": "Jalankan app Flask dan Nginx (halaman statis) di port berbeda. Tangkap traffic dengan Wireshark, uji XSS dan header. Tulis lab-web.md: arsitektur singkat, request nyata, satu temuan dan perbaikannya. Push ke GitHub.",
+  "hasil": "Dokumentasi lab pertama berisi bukti."
+ },
+ {
+  "nomor": 53,
+  "judul": "REST API: Resource, Method, dan Status Code",
+  "fokus": "Software Development",
+  "materi": "Desain endpoint, idempotency, status code yang tepat.",
+  "praktik": "Rancang API \"catatan\" di api-design.md (endpoint, method, request/response, error). Review sendiri terhadap konvensi REST dan jelaskan 3 keputusan desain.",
+  "hasil": "Spesifikasi API tertulis sebelum coding."
+ },
+ {
+  "nomor": 54,
+  "judul": "Flask API CRUD In-Memory",
+  "fokus": "Software Development",
+  "materi": "CRUD, JSON, status 201/204/404.",
+  "praktik": "Implementasikan spesifikasi Modul 53 dengan list Python sebagai penyimpanan sementara. Uji semua endpoint dengan curl.",
+  "hasil": "API CRUD berjalan sesuai desain."
+ },
+ {
+  "nomor": 55,
+  "judul": "Struktur Backend: Blueprint, Config, Modul",
+  "fokus": "Software Development",
+  "materi": "Pemisahan route/logika/config, app factory.",
+  "praktik": "Refactor ke app factory dengan Blueprint dan config.py. Pastikan semua curl Modul 54 tetap lolos.",
+  "hasil": "Struktur proyek yang tumbuh tanpa berantakan."
+ },
+ {
+  "nomor": 56,
+  "judul": "Menguji API: curl, Bruno/Postman, dan Skrip",
+  "fokus": "Software Development",
+  "materi": "Koleksi request yang dapat diulang.",
+  "praktik": "Buat koleksi Bruno atau Postman dengan environment variable untuk base URL dan assertion status code. Ekspor ke repo. Bandingkan dengan script curl di Bash.",
+  "hasil": "Pengujian API yang dapat diulang."
+ },
+ {
+  "nomor": 57,
+  "judul": "Dokumentasi API: OpenAPI Sederhana",
+  "fokus": "Software Development + AI",
+  "materi": "OpenAPI sebagai kontrak antara klien dan server.",
+  "praktik": "Minta AI membuat draft openapi.yaml dari kodemu. Periksa baris demi baris terhadap perilaku sebenarnya, perbaiki kesalahan, lihat di Swagger Editor.",
+  "hasil": "Dokumentasi API yang sudah diverifikasi, bukan sekadar keluaran AI."
+ },
+ {
+  "nomor": 58,
+  "judul": "Error Handling dan Logging di Backend",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Error handler, level log, tidak membocorkan detail internal.",
+  "praktik": "Tambahkan error handler JSON dan modul logging dengan level dan format. Picu exception, bandingkan respons ke klien dengan isi log. Pastikan stack trace tidak bocor ke klien.",
+  "hasil": "Error yang aman untuk klien dan informatif untuk developer."
+ },
+ {
+  "nomor": 59,
+  "judul": "Validasi Input Server-Side dengan Skema",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Validasi berbasis skema (pydantic atau marshmallow), tipe dan batas.",
+  "praktik": "Terapkan skema pada semua endpoint. Uji payload tak valid, tipe salah, field ekstra, dan JSON sangat besar. Atur batas ukuran request.",
+  "hasil": "Pintu masuk API divalidasi secara konsisten."
+ },
+ {
+  "nomor": 60,
+  "judul": "Autentikasi vs Otorisasi: Peta Alur",
+  "fokus": "Cyber Security",
+  "materi": "Siapa kamu vs apa yang boleh kamu lakukan. Alur login → sesi → akses.",
+  "praktik": "Gambar diagram teks alur login dan akses resource pada API-mu. Tandai titik autentikasi, titik otorisasi, dan titik yang mungkin terlewat.",
+  "hasil": "Peta yang dipakai pada Modul 61–69."
+ },
+ {
+  "nomor": 61,
+  "judul": "Penyimpanan Password: Hash, Salt, bcrypt/argon2",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Mengapa SHA-256 polos tidak cukup, salt, work factor.",
+  "praktik": "Hash password dengan bcrypt atau argon2 di Python. Bandingkan waktunya dengan SHA-256, verifikasi password, dan lihat bahwa salt menghasilkan hash berbeda untuk password yang sama.",
+  "hasil": "Cara menyimpan password yang benar."
+ },
+ {
+  "nomor": 62,
+  "judul": "Registrasi dan Login Sederhana",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Alur registrasi dan login dengan penyimpanan sementara.",
+  "praktik": "Tambahkan /register dan /login ke API dengan validasi. Buat pesan error yang tidak membocorkan apakah username ada.",
+  "hasil": "Login berjalan dengan praktik dasar yang aman."
+ },
+ {
+  "nomor": 63,
+  "judul": "Session dan Cookie: HttpOnly, Secure, SameSite",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Session server-side dan flag cookie.",
+  "praktik": "Terapkan session Flask dengan secret dari environment, atur flag cookie, periksa di DevTools. Coba baca cookie HttpOnly dari console dan lihat gagal.",
+  "hasil": "Sesi dengan konfigurasi cookie yang tepat."
+ },
+ {
+  "nomor": 64,
+  "judul": "Brute Force di Lab Lokal dan Rate Limiting",
+  "fokus": "Cyber Security",
+  "materi": "Credential guessing, lockout, throttling.",
+  "praktik": "Tulis script yang mencoba 100 password pada login lokalmu sendiri dan amati log. Tambahkan rate limiting dan jeda bertahap, ulangi script, bandingkan hasilnya.",
+  "hasil": "Memahami serangan dan mitigasinya dengan bukti terukur."
+ },
+ {
+  "nomor": 65,
+  "judul": "JWT: Struktur, Decode, dan Verifikasi",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "header.payload.signature, klaim, kedaluwarsa. JWT bukan enkripsi.",
+  "praktik": "Buat JWT dengan PyJWT dan decode (data dummy saja). Ubah payload dan lihat verifikasi gagal. Atur exp.",
+  "hasil": "Memahami token tanpa menganggapnya rahasia."
+ },
+ {
+  "nomor": 66,
+  "judul": "Kesalahan JWT Umum di Lab dan Perbaikannya",
+  "fokus": "Cyber Security",
+  "materi": "Secret lemah, algoritma tidak dibatasi, token tanpa kedaluwarsa, data sensitif di payload.",
+  "praktik": "Buat endpoint lab dengan secret lemah dan verifikasi tanpa batasan algoritma, tunjukkan dampaknya pada tokenmu sendiri. Perbaiki (secret kuat, algorithms=[...], exp) lalu uji ulang.",
+  "hasil": "Checklist penggunaan JWT yang benar."
+ },
+ {
+  "nomor": 67,
+  "judul": "Otorisasi: Role-Based Access Control",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Role, permission, decorator, default deny.",
+  "praktik": "Tambahkan role user dan admin, buat decorator @requires_role. Uji matriks akses (siapa boleh endpoint apa) dengan curl.",
+  "hasil": "Otorisasi terpusat dengan default deny."
+ },
+ {
+  "nomor": 68,
+  "judul": "IDOR dan Broken Access Control di Lab Lokal",
+  "fokus": "Cyber Security",
+  "materi": "Mengakses objek milik orang lain lewat ID yang bisa ditebak.",
+  "praktik": "Buat /notes/<id> tanpa pengecekan pemilik, akses catatan user lain dengan token user berbeda. Perbaiki dengan pengecekan kepemilikan dan tulis test regresi.",
+  "hasil": "Memahami kerentanan paling umum di API dan cara menutupnya."
+ },
+ {
+  "nomor": 69,
+  "judul": "CSRF: Mekanisme, Lab, Token, dan SameSite",
+  "fokus": "Cyber Security",
+  "materi": "Browser menyertakan cookie otomatis. Token CSRF dan SameSite.",
+  "praktik": "Jalankan dua halaman lokal berbeda port: app target dengan aksi POST berbasis cookie dan halaman \"penyerang\" yang memicu form. Buktikan, lalu tambahkan token CSRF dan SameSite, uji ulang.",
+  "hasil": "Memahami CSRF dari ujung ke ujung."
+ },
+ {
+  "nomor": 70,
+  "judul": "Backend sebagai User Terbatas di Linux",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Jangan menjalankan service sebagai root.",
+  "praktik": "Buat user appuser tanpa login shell, taruh kode di folder dengan permission minimal, jalankan Flask sebagai appuser. Coba baca file milik user lain dan lihat ditolak.",
+  "hasil": "Least privilege pada service nyata."
+ },
+ {
+  "nomor": 71,
+  "judul": "Environment, PATH, dan Konfigurasi Shell",
+  "fokus": "Linux + Software Development",
+  "materi": "Variabel environment, PATH, .bashrc, export.",
+  "praktik": "Tambahkan script ke ~/bin dan PATH, buat alias, atur variabel environment untuk app. Jelaskan bahaya menaruh . di PATH.",
+  "hasil": "Memahami bagaimana shell menemukan perintah dan membaca konfigurasi."
+ },
+ {
+  "nomor": 72,
+  "judul": "Reverse Proxy Nginx ke Flask",
+  "fokus": "Linux + Networking + Software Development",
+  "materi": "Proxy, header X-Forwarded-*, mengapa server dev bukan untuk produksi.",
+  "praktik": "Konfigurasi Nginx proxy_pass ke Flask, baca IP klien dari header, uji dengan curl -v, lihat access log.",
+  "hasil": "Arsitektur klien → Nginx → app berjalan."
+ },
+ {
+  "nomor": 73,
+  "judul": "Rate Limit dan Header Keamanan di Nginx",
+  "fokus": "Cyber Security + Linux",
+  "materi": "limit_req, header di level proxy, batas ukuran body.",
+  "praktik": "Tambahkan limit_req_zone, client_max_body_size, server_tokens off. Uji dengan loop curl dan lihat 429/503 di log.",
+  "hasil": "Perlindungan dasar di lapisan proxy."
+ },
+ {
+  "nomor": 74,
+  "judul": "AI untuk Analisis API: Cari Titik Lemah, Lalu Validasi",
+  "fokus": "AI + Cyber Security",
+  "materi": "AI bagus untuk brainstorming ancaman, tetapi menghasilkan false positive dan negative.",
+  "praktik": "Berikan kode API (tanpa secret) ke AI dan minta daftar potensi kerentanan. Uji tiap klaim dengan curl atau test. Tandai: benar, salah, dan yang tidak terdeteksi AI.",
+  "hasil": "Catatan akurasi AI pada kode nyata."
+ },
+ {
+  "nomor": 75,
+  "judul": "Testing Otomatis dengan pytest",
+  "fokus": "Software Development",
+  "materi": "Unit test, test client Flask, fixture.",
+  "praktik": "Tulis 10 test untuk endpoint CRUD dan auth dengan app.test_client(). Jalankan pytest -v dan ukur coverage dasar.",
+  "hasil": "Jaring pengaman untuk setiap perubahan kode."
+ },
+ {
+  "nomor": 76,
+  "judul": "Menulis Security Test: Akses Tidak Sah",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Test negatif: tanpa token, token kedaluwarsa, role salah, ID milik orang lain.",
+  "praktik": "Tambahkan test negatif untuk semua endpoint. Ubah satu kode dengan sengaja agar test gagal, lalu perbaiki.",
+  "hasil": "Keamanan yang diverifikasi otomatis."
+ },
+ {
+  "nomor": 77,
+  "judul": "Git Workflow: Pull Request, Review, dan Issue",
+  "fokus": "Software Development",
+  "materi": "Feature branch, PR, review, issue.",
+  "praktik": "Buat issue di repo sendiri, buat branch, perbaiki, buka PR. Review diff sendiri dengan checklist, merge, tutup issue dengan Fixes #n.",
+  "hasil": "Alur kerja kolaborasi standar."
+ },
+ {
+  "nomor": 78,
+  "judul": "Git Lanjutan: Stash, Revert, Rebase, Reflog",
+  "fokus": "Software Development",
+  "materi": "Mengurungkan perubahan dengan aman.",
+  "praktik": "Stash pekerjaan, revert commit buruk, rebase interaktif untuk merapikan 4 commit, pulihkan commit yang \"hilang\" dengan reflog.",
+  "hasil": "Bisa memperbaiki kesalahan Git tanpa panik."
+ },
+ {
+  "nomor": 79,
+  "judul": "Repository Hygiene: Memindai Secret dan Riwayat",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Secret scanning dan pre-commit hook.",
+  "praktik": "Jalankan gitleaks pada repo latihanmu, temukan secret dummy dari Modul 23. Tambahkan pre-commit hook, uji commit yang diblokir.",
+  "hasil": "Pencegahan kebocoran secret otomatis."
+ },
+ {
+  "nomor": 80,
+  "judul": "Manajemen Sesi: Logout, Kedaluwarsa, Session Fixation",
+  "fokus": "Cyber Security",
+  "materi": "Siklus hidup sesi, regenerasi ID, idle dan absolute timeout.",
+  "praktik": "Implementasikan logout yang membatalkan sesi di server, timeout, dan regenerasi sesi setelah login. Uji bahwa cookie lama tidak lagi valid.",
+  "hasil": "Sesi yang tidak bisa dipakai ulang sembarangan."
+ },
+ {
+  "nomor": 81,
+  "judul": "Mass Assignment dan Excessive Data Exposure",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Menerima atau mengembalikan field lebih dari yang seharusnya.",
+  "praktik": "Di API lab, kirim {\"role\":\"admin\"} pada update profil dan lihat dampaknya. Temukan respons yang membocorkan password_hash. Perbaiki dengan allowlist field dan schema response.",
+  "hasil": "Kontrol atas field yang masuk dan keluar."
+ },
+ {
+  "nomor": 82,
+  "judul": "CORS: Cara Kerja dan Salah Konfigurasi",
+  "fokus": "Networking + Cyber Security + Software Development",
+  "materi": "Same-Origin Policy, preflight, Access-Control-Allow-Origin.",
+  "praktik": "Jalankan frontend di port 5500 dan API di 5000, picu error CORS, perbaiki dengan allowlist origin. Coba * bersama credentials dan jelaskan kenapa berbahaya.",
+  "hasil": "Paham CORS sebagai aturan browser, bukan firewall."
+ },
+ {
+  "nomor": 83,
+  "judul": "Mode Debug dan Konfigurasi Dev vs Produksi",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Debugger interaktif, secret key default, konfigurasi per environment.",
+  "praktik": "Aktifkan mode debug pada app lokal (hanya 127.0.0.1), lihat halaman error, jelaskan risikonya bila terekspos. Pisahkan config dev dan prod lewat environment variable.",
+  "hasil": "Konfigurasi yang aman untuk produksi."
+ },
+ {
+  "nomor": 84,
+  "judul": "AI sebagai Code Reviewer Backend",
+  "fokus": "AI + Software Development + Cyber Security",
+  "materi": "Review dengan AI butuh konteks dan kriteria yang jelas.",
+  "praktik": "Tulis checklist review (auth, input, error, log, secret). Berikan kode API dan minta AI memakai checklist itu. Bandingkan dengan review manualmu, catat apa yang hanya ditemukan AI atau hanya olehmu.",
+  "hasil": "Proses review yang menggabungkan keduanya."
+ },
+ {
+  "nomor": 85,
+  "judul": "Checkpoint 3: Mini-Lab API Auth yang Aman",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menggabungkan Modul 53–84.",
+  "praktik": "Tulis daftar 5 risiko (auth, IDOR, CSRF, CORS, debug) untuk API-mu. Buktikan tiap risiko atau tandai tidak berlaku, perbaiki, tambahkan test, jalankan pytest, lalu push lewat PR.",
+  "hasil": "API kecil dengan bukti pengujian."
+ },
+ {
+  "nomor": 86,
+  "judul": "Konsep Database Relasional",
+  "fokus": "Software Development",
+  "materi": "Tabel, baris, primary key, foreign key, relasi 1-N dan N-N.",
+  "praktik": "Rancang skema aplikasi catatan (users, notes, tags) dalam teks. Tentukan key dan relasi, jelaskan mengapa tidak semua disimpan dalam satu tabel.",
+  "hasil": "Skema awal yang masuk akal."
+ },
+ {
+  "nomor": 87,
+  "judul": "SQLite dan SQL Dasar: CREATE, INSERT, SELECT",
+  "fokus": "Software Development",
+  "materi": "DDL vs DML, tipe data SQLite.",
+  "praktik": "Buka sqlite3 di terminal, buat tabel users dan notes, isi 10 baris, SELECT dengan kolom dan alias.",
+  "hasil": "Membuat dan membaca data langsung dari database."
+ },
+ {
+  "nomor": 88,
+  "judul": "SQL: WHERE, ORDER BY, LIMIT, UPDATE, DELETE",
+  "fokus": "Software Development",
+  "materi": "Filter dan modifikasi data, bahaya UPDATE/DELETE tanpa WHERE.",
+  "praktik": "Kerjakan 15 query dengan filter, LIKE, IN, dan pengurutan. Coba UPDATE/DELETE di dalam transaksi lalu ROLLBACK.",
+  "hasil": "Query CRUD lengkap dengan kebiasaan aman."
+ },
+ {
+  "nomor": 89,
+  "judul": "SQL JOIN dan Relasi Banyak Tabel",
+  "fokus": "Software Development",
+  "materi": "INNER JOIN, LEFT JOIN.",
+  "praktik": "Gabungkan users dan notes, temukan user tanpa catatan (LEFT JOIN + NULL), buat tabel penghubung untuk tag.",
+  "hasil": "Menjawab pertanyaan lintas tabel."
+ },
+ {
+  "nomor": 90,
+  "judul": "Agregasi, GROUP BY, dan Index",
+  "fokus": "Software Development",
+  "materi": "COUNT, SUM, AVG, HAVING, index.",
+  "praktik": "Hitung catatan per user. Isi 100 ribu baris dengan script, bandingkan waktu query sebelum dan sesudah index dengan EXPLAIN QUERY PLAN.",
+  "hasil": "Memahami dampak index pada performa."
+ },
+ {
+  "nomor": 91,
+  "judul": "Python + SQLite: Menghubungkan Aplikasi ke Database",
+  "fokus": "Software Development",
+  "materi": "Koneksi, cursor, commit, row factory.",
+  "praktik": "Tulis db.py dengan fungsi tambah/ambil/hapus catatan memakai sqlite3. Hubungkan ke API Flask dan ganti penyimpanan in-memory.",
+  "hasil": "API dengan data persisten."
+ },
+ {
+  "nomor": 92,
+  "judul": "Desain Skema: Normalisasi Praktis dan ERD",
+  "fokus": "Software Development",
+  "materi": "1NF–3NF secara praktis, constraint.",
+  "praktik": "Perbaiki skema yang sengaja berantakan (data duplikat). Tambahkan NOT NULL, UNIQUE, FOREIGN KEY, CHECK. Gambar ERD dengan Mermaid.",
+  "hasil": "Skema bersih dengan constraint."
+ },
+ {
+  "nomor": 93,
+  "judul": "Migrasi dan Seed Data",
+  "fokus": "Software Development",
+  "materi": "Perubahan skema yang dapat diulang.",
+  "praktik": "Tulis 001_init.sql dan 002_add_tags.sql, serta runner Python yang mencatat versi migrasi. Buat seed.py untuk data uji.",
+  "hasil": "Database dapat dibangun ulang dari nol dengan satu perintah."
+ },
+ {
+  "nomor": 94,
+  "judul": "AI untuk Query dan Optimasi: Verifikasi dengan EXPLAIN",
+  "fokus": "AI + Software Development",
+  "materi": "AI dapat menulis SQL, tetapi harus diuji pada data nyata.",
+  "praktik": "Minta AI membuat 5 query kompleks dari deskripsi, jalankan pada data seed, cocokkan dengan hitungan manual. Minta saran optimasi lalu uji dengan EXPLAIN QUERY PLAN.",
+  "hasil": "AI dipakai sebagai asisten query dengan verifikasi hasil."
+ },
+ {
+  "nomor": 95,
+  "judul": "Dari Input ke Query: String Concatenation",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Bagaimana input pengguna menjadi bagian dari perintah SQL.",
+  "praktik": "Buat endpoint lab yang menyusun SQL dengan f-string, cetak query final ke log untuk input normal dan input berisi tanda kutip. Amati perubahan struktur query.",
+  "hasil": "Memahami akar masalah injection: data diperlakukan sebagai kode."
+ },
+ {
+  "nomor": 96,
+  "judul": "SQL Injection di Lab: Login Bypass",
+  "fokus": "Cyber Security",
+  "materi": "Manipulasi kondisi WHERE.",
+  "praktik": "Pada lab lokal Modul 95, bypass login dengan payload klasik, lihat query hasilnya di log. Jelaskan mengapa berhasil dan apa dampaknya.",
+  "hasil": "Demonstrasi SQLi terkontrol pada aplikasi milik sendiri."
+ },
+ {
+  "nomor": 97,
+  "judul": "SQL Injection: UNION dan Ekstraksi Data di Lab",
+  "fokus": "Cyber Security",
+  "materi": "UNION SELECT, jumlah dan tipe kolom, metadata skema.",
+  "praktik": "Pada endpoint pencarian lab lokal, tentukan jumlah kolom lalu ekstrak daftar tabel (sqlite_master) dan data dari tabel lain. Catat data apa yang bocor.",
+  "hasil": "Memahami dampak SQLi pada kerahasiaan data."
+ },
+ {
+  "nomor": 98,
+  "judul": "SQL Injection Blind: Boolean-Based di Lab",
+  "fokus": "Cyber Security",
+  "materi": "Inferensi tanpa output langsung; konsep time-based.",
+  "praktik": "Buat endpoint lab yang hanya menjawab \"ada/tidak ada\". Tulis script Python kecil terhadap app lokalmu untuk menebak satu nilai karakter demi karakter. Hitung jumlah request yang dibutuhkan.",
+  "hasil": "Paham bahwa tidak adanya error bukan berarti aman."
+ },
+ {
+  "nomor": 99,
+  "judul": "Parameterized Query: Perbaikan yang Benar",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Pemisahan kode SQL dan data.",
+  "praktik": "Ganti semua query lab dengan placeholder ?. Ulangi payload Modul 96–98 dan buktikan gagal. Jelaskan mengapa escaping manual tidak dipakai.",
+  "hasil": "Perbaikan yang terverifikasi."
+ },
+ {
+  "nomor": 100,
+  "judul": "Regression Test untuk SQLi",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Menjadikan payload serangan sebagai test permanen.",
+  "praktik": "Tulis test pytest yang mengirim payload SQLi ke setiap endpoint dan menegaskan respons aman. Jalankan sebelum dan sesudah perbaikan.",
+  "hasil": "Kerentanan yang sudah diperbaiki tidak akan kembali tanpa terdeteksi."
+ },
+ {
+  "nomor": 101,
+  "judul": "MariaDB di Linux: Instal dan Service",
+  "fokus": "Linux + Software Development",
+  "materi": "Server database vs file database, model client/server.",
+  "praktik": "Pasang MariaDB di WSL, cek systemctl status mariadb, login dengan mysql, buat database, impor skema Modul 93 (disesuaikan). Pastikan port 3306 hanya bind ke 127.0.0.1 dengan ss.",
+  "hasil": "Database server berjalan dan hanya dapat diakses lokal."
+ },
+ {
+  "nomor": 102,
+  "judul": "User dan Privilese Database",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Least privilege pada database, GRANT.",
+  "praktik": "Buat app_rw (SELECT/INSERT/UPDATE/DELETE pada satu database) dan app_ro. Uji bahwa DROP TABLE ditolak. Hapus akun anonim dan pastikan root tidak berpassword kosong.",
+  "hasil": "Akun database dengan hak minimum."
+ },
+ {
+  "nomor": 103,
+  "judul": "Flask ke MariaDB dengan User Terbatas",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Driver database, konfigurasi koneksi, secret via environment.",
+  "praktik": "Hubungkan app ke MariaDB memakai app_rw dengan kredensial dari .env. Uji parameterized query dan tangani error koneksi tanpa membocorkan DSN.",
+  "hasil": "App terhubung ke database server dengan konfigurasi aman."
+ },
+ {
+  "nomor": 104,
+  "judul": "ORM: SQLAlchemy Dasar",
+  "fokus": "Software Development",
+  "materi": "Model, session, relationship.",
+  "praktik": "Definisikan model User dan Note, buat CRUD dengan SQLAlchemy. Bandingkan SQL yang dihasilkan (echo=True) dengan query tulisanmu.",
+  "hasil": "Paham apa yang dikerjakan ORM di balik layar."
+ },
+ {
+  "nomor": 105,
+  "judul": "ORM dan Keamanan: Raw Query dan Mass Assignment",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "ORM mengurangi, tetapi tidak menghilangkan, risiko.",
+  "praktik": "Tulis versi rentan dengan text() + f-string pada filter pencarian, buktikan injection, perbaiki dengan bound parameters. Periksa juga update model dari dict mentah.",
+  "hasil": "Tahu kapan ORM masih bisa rentan."
+ },
+ {
+  "nomor": 106,
+  "judul": "Backup dan Restore Database dengan Script",
+  "fokus": "Linux + Software Development",
+  "materi": "mysqldump, restore, uji pemulihan.",
+  "praktik": "Tulis db-backup.sh dengan kompresi, stempel waktu, dan checksum. Hapus data, restore, verifikasi jumlah baris.",
+  "hasil": "Backup yang terbukti dapat direstore."
+ },
+ {
+  "nomor": 107,
+  "judul": "Enkripsi Data: At Rest, In Transit, Field Sensitif",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Hash vs enkripsi, kunci, kapan field perlu dienkripsi.",
+  "praktik": "Enkripsi kolom catatan privat dengan cryptography (Fernet), simpan key di environment. Lihat isi database yang terenkripsi, coba dekripsi dengan key salah, catat risiko manajemen key.",
+  "hasil": "Memahami bahwa tantangan utama enkripsi adalah pengelolaan kunci."
+ },
+ {
+  "nomor": 108,
+  "judul": "Data Sensitif dan Privasi: Minimasi dan Masking Log",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Simpan hanya yang perlu, data pribadi di log.",
+  "praktik": "Audit log app untuk password, token, dan email. Tambahkan filter logging yang menyamarkan nilai sensitif. Hapus field tak diperlukan dari skema.",
+  "hasil": "App yang mengumpulkan dan mencatat data seperlunya."
+ },
+ {
+  "nomor": 109,
+  "judul": "Audit Log di Database",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Siapa melakukan apa dan kapan.",
+  "praktik": "Buat tabel audit_log dan catat login, gagal login, perubahan role, dan penghapusan. Tulis query yang mendeteksi 5 gagal login beruntun.",
+  "hasil": "Jejak audit yang dapat ditanyai."
+ },
+ {
+  "nomor": 110,
+  "judul": "PHP + PDO: Prepared Statement vs Concatenation",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Pola yang sama di PHP, bahasa yang sudah kamu kenal.",
+  "praktik": "Pasang PHP CLI, jalankan php -S 127.0.0.1:8080. Tulis halaman login dengan concatenation dan versi PDO prepared, uji dengan input berisi tanda kutip.",
+  "hasil": "Prinsip injection dipahami lintas bahasa."
+ },
+ {
+  "nomor": 111,
+  "judul": "Lab Terarah: PortSwigger Academy — SQL Injection",
+  "fokus": "Cyber Security",
+  "materi": "Lab resmi yang memang disediakan untuk latihan legal.",
+  "praktik": "Buat akun, kerjakan 3 lab SQLi tingkat Apprentice. Tulis langkah solusi dengan kata sendiri dan kaitkan tiap lab dengan lab lokalmu.",
+  "hasil": "Pengalaman SQLi pada target latihan resmi."
+ },
+ {
+  "nomor": 112,
+  "judul": "Checklist Hardening Database",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Bind address, akun, privilese, backup, update, log.",
+  "praktik": "Tulis checklist 10 item, audit MariaDB lokal terhadapnya (SHOW GRANTS, ss, file config), perbaiki yang gagal.",
+  "hasil": "Checklist hardening yang sudah dijalankan."
+ },
+ {
+  "nomor": 113,
+  "judul": "Pesan Error yang Membocorkan Informasi",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Verbose error, stack trace, perbedaan respons yang membocorkan informasi.",
+  "praktik": "Bandingkan respons login (user tidak ada vs password salah), error database mentah, 404 vs 403. Seragamkan respons ke klien dan simpan detail hanya di log.",
+  "hasil": "Respons ke klien yang minim informasi."
+ },
+ {
+  "nomor": 114,
+  "judul": "AI dan Review Keamanan SQL",
+  "fokus": "AI + Cyber Security",
+  "materi": "AI sebagai pasangan review, bukan hakim.",
+  "praktik": "Beri AI 5 potongan kode query (2 aman, 3 rentan, tanpa label) dan minta penilaian. Hitung akurasinya, uji yang diklaim rentan dengan payload lab. Catat kasus ketika AI yakin tetapi salah.",
+  "hasil": "Data kecil tentang keandalan AI dan kebiasaan memverifikasi."
+ },
+ {
+  "nomor": 115,
+  "judul": "Checkpoint 4: Aplikasi Berbasis DB: Serang, Perbaiki, Uji Ulang",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menggabungkan Modul 86–114.",
+  "praktik": "Pada app catatan + MariaDB: daftar permukaan serang (input, query, auth), uji SQLi dan IDOR, perbaiki, tambahkan regression test, update lab-notes.md, lalu PR dan merge.",
+  "hasil": "Satu siklus penuh secure development pada aplikasi berbasis database."
+ },
+ {
+  "nomor": 116,
+  "judul": "VM Ubuntu Server dengan VirtualBox: Lab Jaringan Pribadi",
+  "fokus": "Linux + Networking",
+  "materi": "VM sebagai lab terisolasi, mode NAT dan Host-Only.",
+  "praktik": "Pasang VirtualBox (atau Hyper-V), instal Ubuntu Server minimal, atur adapter NAT + Host-Only, cek ip addr, ping host ↔ VM. Ambil snapshot setelah instalasi bersih. Jika RAM terbatas, batasi VM ke 2 GB.",
+  "hasil": "Server lab terpisah yang menjadi target latihan aman."
+ },
+ {
+  "nomor": 117,
+  "judul": "Struktur Direktori Lebih Dalam dan /proc",
+  "fokus": "Linux",
+  "materi": "/etc, /var, /usr, /opt, /proc, /dev.",
+  "praktik": "Baca /proc/cpuinfo, /proc/meminfo, /proc/<pid>/status, /etc/hosts. Temukan di mana Nginx dan SSH menyimpan config, log, dan data. Catat peta lokasinya.",
+  "hasil": "Tahu ke mana mencari saat ada yang rusak."
+ },
+ {
+  "nomor": 118,
+  "judul": "Text Processing Lanjutan: sed, awk, tr",
+  "fokus": "Linux",
+  "materi": "Transformasi teks per baris dan kolom.",
+  "praktik": "Pakai sed untuk mengganti dan menyamarkan IP di log sampel, awk untuk menjumlahkan bytes per status code, tr untuk normalisasi. Simpan 5 one-liner favorit di catatan.",
+  "hasil": "Alat cepat untuk mengolah log."
+ },
+ {
+  "nomor": 119,
+  "judul": "Regex Praktis: grep -E dan Python re",
+  "fokus": "Linux + Software Development + AI",
+  "materi": "Pola regex untuk IP, email, timestamp, dan risiko ReDoS.",
+  "praktik": "Tulis regex untuk mengekstrak IP dan URL dari log, uji di grep -E dan Python re. Minta AI menjelaskan satu regex rumit baris demi baris, lalu cek dengan contoh. Ukur waktu satu regex rentan pada input panjang (lokal).",
+  "hasil": "Regex yang bisa dipakai dan sadar risikonya."
+ },
+ {
+  "nomor": 120,
+  "judul": "Disk, Mount, dan Storage",
+  "fokus": "Linux",
+  "materi": "df, du, lsblk, filesystem, mount, /etc/fstab.",
+  "praktik": "Pada VM, tambahkan disk virtual kecil, partisi dengan fdisk, format ext4, mount, tulis file. Pantau dengan df -h dan du -sh. Jelaskan mengapa disk penuh bisa menghentikan service.",
+  "hasil": "Memahami storage Linux dari disk sampai direktori."
+ },
+ {
+  "nomor": 121,
+  "judul": "Cron dan systemd Timer",
+  "fokus": "Linux",
+  "materi": "Penjadwalan tugas.",
+  "praktik": "Jadwalkan backup.sh setiap menit dengan cron, cek log eksekusi. Pindahkan ke systemd timer. Catat masalah PATH pada cron.",
+  "hasil": "Tugas otomatis yang dapat dipantau."
+ },
+ {
+  "nomor": 122,
+  "judul": "Shell Scripting Lanjutan",
+  "fokus": "Linux + Software Development",
+  "materi": "Fungsi, argumen, set -euo pipefail, trap, quoting.",
+  "praktik": "Tulis audit-lite.sh dengan fungsi dan error handling. Sengaja pakai nama file berspasi untuk menunjukkan bug quoting, lalu jalankan shellcheck.",
+  "hasil": "Script Bash yang lebih tangguh."
+ },
+ {
+  "nomor": 123,
+  "judul": "Backup Otomatis dengan Verifikasi Hash",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Aturan backup 3-2-1, integritas backup.",
+  "praktik": "Kembangkan backup menjadi tar.gz + sha256sum, jadwalkan dengan cron, tulis script verifikasi. Rusak arsip sengaja dan lihat verifikasi gagal.",
+  "hasil": "Backup dengan pembuktian integritas."
+ },
+ {
+  "nomor": 124,
+  "judul": "SSH Key-Based Login antar Host Lab",
+  "fokus": "Linux + Networking + Cyber Security",
+  "materi": "Autentikasi key, authorized_keys, ssh-agent.",
+  "praktik": "Pasang openssh-server di VM, buat key baru, ssh-copy-id, login tanpa password, atur ~/.ssh/config. Coba permission salah pada ~/.ssh dan lihat penolakan.",
+  "hasil": "Akses remote berbasis key ke VM."
+ },
+ {
+  "nomor": 125,
+  "judul": "SSH Hardening dan Log Autentikasi",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Nonaktifkan password login dan root login, batasi user, baca log autentikasi.",
+  "praktik": "Ubah sshd_config (PasswordAuthentication no, PermitRootLogin no, AllowUsers) sambil menjaga satu sesi aktif agar tidak terkunci. Coba login gagal dan temukan jejaknya di auth.log atau journalctl -u ssh.",
+  "hasil": "SSH yang lebih aman dan terpantau."
+ },
+ {
+  "nomor": 126,
+  "judul": "Firewall ufw di VM",
+  "fokus": "Cyber Security + Linux + Networking",
+  "materi": "Default deny, allowlist port, logging.",
+  "praktik": "Atur ufw default deny incoming, izinkan SSH dan HTTP dari host, aktifkan logging. Uji dari host dengan curl dan nc, baca log firewall.",
+  "hasil": "Permukaan serang VM dibatasi dan terverifikasi."
+ },
+ {
+  "nomor": 127,
+  "judul": "Port Scanning Lab Sendiri dengan Nmap",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Scan TCP connect/SYN, deteksi versi, izin dan etika.",
+  "praktik": "Hanya terhadap IP VM milikmu: nmap -sT, -sV, -p-. Bandingkan sebelum dan sesudah firewall. Tangkap traffic scan di Wireshark dan amati polanya.",
+  "hasil": "Melihat server dari sudut pandang penyerang pada aset sendiri."
+ },
+ {
+  "nomor": 128,
+  "judul": "Membaca Hasil Nmap dan Mengecilkan Attack Surface",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Layanan yang tidak perlu adalah risiko.",
+  "praktik": "Untuk setiap port terbuka di VM, tentukan layanannya dan apakah perlu. Nonaktifkan yang tidak perlu, scan ulang, bandingkan.",
+  "hasil": "Daftar port sebelum/sesudah beserta alasannya."
+ },
+ {
+  "nomor": 129,
+  "judul": "Update, CVE, dan unattended-upgrades",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Patch management, CVE, severity.",
+  "praktik": "Jalankan apt list --upgradable. Cari satu paket dengan CVE di Ubuntu Security Tracker dan baca advisory-nya. Aktifkan unattended-upgrades dan verifikasi konfigurasi.",
+  "hasil": "Proses update yang sadar risiko."
+ },
+ {
+  "nomor": 130,
+  "judul": "Deploy Flask di VM: gunicorn dan systemd",
+  "fokus": "Software Development + Linux",
+  "materi": "WSGI server, unit systemd, restart policy.",
+  "praktik": "Salin app ke VM, jalankan dengan gunicorn. Tulis app.service (user terbatas, EnvironmentFile, Restart=on-failure), enable, lalu kill prosesnya dan lihat pulih sendiri.",
+  "hasil": "Aplikasi berjalan sebagai service yang pulih otomatis."
+ },
+ {
+  "nomor": 131,
+  "judul": "Nginx Reverse Proxy dan TLS Self-Signed di VM",
+  "fokus": "Linux + Networking + Cyber Security",
+  "materi": "Terminasi TLS di proxy, redirect HTTP → HTTPS, HSTS.",
+  "praktik": "Buat sertifikat self-signed, konfigurasi Nginx 443 → gunicorn dan redirect 80 → 443. Uji curl -vk dan openssl s_client.",
+  "hasil": "Deployment HTTPS lengkap di jaringan lab."
+ },
+ {
+  "nomor": 132,
+  "judul": "Logging Terpusat Sederhana dan Log Rotation",
+  "fokus": "Linux + Cyber Security",
+  "materi": "journald, rsyslog, logrotate.",
+  "praktik": "Atur app mencatat ke journald atau file terstruktur, konfigurasi logrotate, paksa rotasi. Cari event tertentu dengan journalctl --since.",
+  "hasil": "Log yang tersimpan, tidak memenuhi disk, dan mudah dicari."
+ },
+ {
+  "nomor": 133,
+  "judul": "Monitoring Sistem: top, free, vmstat, ss",
+  "fokus": "Linux",
+  "materi": "CPU, memori, I/O, jaringan.",
+  "praktik": "Buat beban (loop CPU, alokasi memori, tulis disk), amati dengan top/htop, free -m, vmstat 1, iostat. Hubungkan gejala dengan penyebab.",
+  "hasil": "Mendiagnosis beban sistem dengan alat standar."
+ },
+ {
+  "nomor": 134,
+  "judul": "Troubleshooting Sistematis: Service Mati dan Port Bentrok",
+  "fokus": "Linux + Software Development",
+  "materi": "Gejala → hipotesis → bukti → perbaikan.",
+  "praktik": "Ambil snapshot, lalu rusak sengaja 4 hal (typo config, izin file, port bentrok, env hilang). Diagnosis dengan systemctl, journalctl, ss, ls -l. Catat runbook per masalah.",
+  "hasil": "Pola troubleshooting yang konsisten."
+ },
+ {
+  "nomor": 135,
+  "judul": "Permission Lanjutan: SUID, SGID, Sticky Bit, ACL",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Bit khusus dan implikasi keamanannya.",
+  "praktik": "Buat folder bersama dengan sticky bit dan SGID, pakai getfacl/setfacl. Temukan binari SUID standar dengan find / -perm -4000 2>/dev/null dan jelaskan 5 di antaranya.",
+  "hasil": "Memahami mekanisme permission lanjutan."
+ },
+ {
+  "nomor": 136,
+  "judul": "Audit Misconfigurasi Permission di Lab",
+  "fokus": "Cyber Security + Linux",
+  "materi": "File world-writable, kunci terbuka, config berisi secret.",
+  "praktik": "Di VM buat 5 misconfigurasi (.env mode 666, ~/.ssh mode 777, script cron yang dapat ditulis semua orang, dll). Tulis script audit dengan find dan stat yang mendeteksinya, perbaiki, jalankan ulang.",
+  "hasil": "Script audit permission buatan sendiri."
+ },
+ {
+  "nomor": 137,
+  "judul": "Command Injection: Konsep dan Lab Lokal",
+  "fokus": "Cyber Security + Software Development + Linux",
+  "materi": "Input yang masuk ke perintah shell.",
+  "praktik": "Buat endpoint Flask lab yang memanggil ping lewat os.system dengan input pengguna. Buktikan injeksi di VM lab dengan perintah tidak berbahaya (id). Perbaiki dengan subprocess.run([...]) tanpa shell dan validasi, uji ulang.",
+  "hasil": "Paham risiko memanggil shell dari aplikasi."
+ },
+ {
+  "nomor": 138,
+  "judul": "Path Traversal dan LFI: Lab dan Perbaikan",
+  "fokus": "Cyber Security + Linux",
+  "materi": "../, normalisasi path, direktori dasar.",
+  "praktik": "Buat endpoint unduh file yang rentan, akses file dummy di luar folder. Perbaiki dengan os.path.realpath + pengecekan prefix atau send_from_directory, tambahkan test.",
+  "hasil": "Pencegahan akses file tidak sah."
+ },
+ {
+  "nomor": 139,
+  "judul": "Troubleshooting Jaringan: tcpdump, ss, curl",
+  "fokus": "Networking + Linux",
+  "materi": "Menentukan lapisan yang bermasalah.",
+  "praktik": "Sengaja salahkan DNS, firewall, dan port. Diagnosis berurutan dengan ping, dig, ss, curl -v, tcpdump -i any port 80. Tulis diagram keputusan sederhana.",
+  "hasil": "Diagnosis jaringan lapis demi lapis."
+ },
+ {
+  "nomor": 140,
+  "judul": "DHCP dan DNS Lokal dengan dnsmasq",
+  "fokus": "Networking + Linux",
+  "materi": "Peran DHCP dan DNS di jaringan.",
+  "praktik": "Di jaringan host-only, pasang dnsmasq pada VM server dan jalankan VM klien kedua yang mendapat IP serta meresolusi web.lab. Amati paket DHCP dengan tcpdump.",
+  "hasil": "Memahami infrastruktur jaringan dengan membangunnya dalam skala kecil."
+ },
+ {
+  "nomor": 141,
+  "judul": "Mendeteksi Scan dari Log Sendiri",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Jejak scan di log firewall dan web.",
+  "praktik": "Jalankan Nmap dari host ke VM, cari jejaknya di log ufw, Nginx, dan auth. Tulis script deteksi sederhana (threshold port berbeda per IP).",
+  "hasil": "Sudut pandang defender: mengenali scan."
+ },
+ {
+  "nomor": 142,
+  "judul": "AI untuk Runbook dan Checklist Server",
+  "fokus": "AI + Linux",
+  "materi": "AI efektif membuat draft dokumentasi operasional, tetapi saran berbahaya harus disaring.",
+  "praktik": "Minta AI membuat runbook \"service tidak jalan\" dan checklist hardening. Bandingkan dengan pengalamanmu pada Modul 125–134, hapus langkah yang salah atau berbahaya (misalnya chmod 777), simpan versi final.",
+  "hasil": "Runbook pribadi yang sudah dikurasi."
+ },
+ {
+  "nomor": 143,
+  "judul": "Python Automation: Script Health Check Service",
+  "fokus": "Software Development + Linux",
+  "materi": "Otomasi pemeriksaan port, HTTP, disk, dan proses.",
+  "praktik": "Tulis healthcheck.py dengan socket, requests, shutil.disk_usage, subprocess. Keluaran JSON dan exit code, jalankan lewat cron di VM.",
+  "hasil": "Alat monitoring kecil buatan sendiri."
+ },
+ {
+  "nomor": 144,
+  "judul": "Provisioning Otomatis: Script Setup VM yang Dapat Diulang",
+  "fokus": "Linux + Software Development",
+  "materi": "Infrastruktur sebagai kode dalam versi ringan, idempotency.",
+  "praktik": "Tulis provision.sh (instal paket, buat user, salin config, atur firewall, aktifkan service) yang aman dijalankan berulang. Jalankan pada VM bersih dari snapshot dan verifikasi dengan healthcheck.py.",
+  "hasil": "Server lab dapat dibangun ulang dalam hitungan menit."
+ },
+ {
+  "nomor": 145,
+  "judul": "Checkpoint 5: Server Lab Lengkap: Deploy, Hardening, Scan Ulang",
+  "fokus": "Software Development + Cyber Security + Linux + Networking",
+  "materi": "Menggabungkan Modul 116–144.",
+  "praktik": "Provision VM, deploy app + MariaDB di belakang Nginx TLS, hardening SSH + ufw, scan dengan Nmap, audit permission, jalankan healthcheck.py. Tulis server-lab.md berisi temuan dan perbaikan.",
+  "hasil": "Server lab terdokumentasi yang dapat direproduksi."
+ },
+ {
+  "nomor": 146,
+  "judul": "Aturan Main Pengujian: Scope, Izin, dan Etika",
+  "fokus": "Cyber Security",
+  "materi": "Scope, rules of engagement, otorisasi, batas hukum.",
+  "praktik": "Tulis rules-of-engagement.md untuk labmu: aset yang boleh diuji (VM, localhost, platform latihan resmi), yang dilarang, cara mencatat bukti, dan langkah bila menemukan kebocoran di sistem pihak lain (berhenti dan lapor, jangan menelusuri).",
+  "hasil": "Pedoman etika pribadi yang dipatuhi pada semua modul berikutnya."
+ },
+ {
+  "nomor": 147,
+  "judul": "OWASP Top 10: Memetakan Risiko ke Kode Sendiri",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Kategori risiko aplikasi web modern.",
+  "praktik": "Baca OWASP Top 10 terbaru dari situs resmi. Untuk tiap kategori, cari satu contoh di kode yang sudah kamu tulis (Modul 43–115) dan tandai sudah diuji atau belum.",
+  "hasil": "Peta cakupan pengujian untuk modul berikutnya."
+ },
+ {
+  "nomor": 148,
+  "judul": "Docker Dasar: Image, Container, Port, Volume",
+  "fokus": "Linux + Software Development",
+  "materi": "Container vs VM, layer image.",
+  "praktik": "Pasang Docker, jalankan nginx, map port, mount volume, docker exec, docker logs. Bersihkan dengan docker system prune.",
+  "hasil": "Menjalankan dan mengelola container."
+ },
+ {
+  "nomor": 149,
+  "judul": "Lab Rentan Lokal: OWASP Juice Shop dengan Docker",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Aplikasi yang sengaja rentan untuk latihan legal.",
+  "praktik": "Jalankan Juice Shop di 127.0.0.1:3000, jelajahi fitur, selesaikan 2 challenge bintang 1 dengan DevTools. Catat teknik yang dipakai.",
+  "hasil": "Target latihan lokal yang bisa direset kapan saja."
+ },
+ {
+  "nomor": 150,
+  "judul": "Burp Suite Community: Proxy, Repeater, Intercept",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Proxy intercept, memodifikasi request.",
+  "praktik": "Atur browser lewat Burp ke Juice Shop lokal, pasang CA Burp di browser lab. Intercept login, kirim ulang di Repeater dengan modifikasi, baca riwayat HTTP.",
+  "hasil": "Alur kerja Burp pada target lokal."
+ },
+ {
+  "nomor": 151,
+  "judul": "OWASP ZAP: Scan Pasif dan Aktif ke Lab Sendiri",
+  "fokus": "Cyber Security",
+  "materi": "Scanner otomatis, spider, batas efektivitasnya.",
+  "praktik": "Jalankan ZAP pada app Flask Modul 115 dan Juice Shop lokal: mode pasif lalu aktif terbatas. Simpan laporan dan jangan arahkan ke domain lain.",
+  "hasil": "Laporan scanner pertama pada target sendiri."
+ },
+ {
+  "nomor": 152,
+  "judul": "Membaca Hasil Scanner: Triage dan False Positive",
+  "fokus": "Cyber Security",
+  "materi": "Severity vs eksploitabilitas, bukti.",
+  "praktik": "Dari laporan Modul 151, verifikasi manual 8 temuan (Burp Repeater atau curl). Klasifikasikan: valid, false positive, informasional, lengkap dengan alasan.",
+  "hasil": "Kemampuan menyaring keluaran tool."
+ },
+ {
+  "nomor": 153,
+  "judul": "DVWA di Docker: Level Low",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Aplikasi PHP rentan klasik.",
+  "praktik": "Jalankan DVWA lokal dengan security Low. Kerjakan SQLi, XSS, dan Command Injection, lalu hubungkan tiap bug dengan kode PHP lewat \"View Source\".",
+  "hasil": "Memahami bug dari sisi kode, bukan hanya payload."
+ },
+ {
+  "nomor": 154,
+  "judul": "Stored XSS di Lab: Dampak dan Output Encoding",
+  "fokus": "Cyber Security",
+  "materi": "Payload tersimpan di database dan tereksekusi pada pengguna lain.",
+  "praktik": "Buat fitur komentar rentan di app lab, simpan payload alert, lihat eksekusi di sesi lain. Jelaskan dampaknya (pembajakan sesi jika cookie tidak HttpOnly), perbaiki dengan encoding saat output, uji ulang.",
+  "hasil": "Paham beda reflected dan stored serta perbaikan di titik output."
+ },
+ {
+  "nomor": 155,
+  "judul": "DOM XSS: Source dan Sink JavaScript",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "location.hash, innerHTML, eval.",
+  "praktik": "Buat halaman statis yang memasukkan location.hash ke innerHTML, buktikan, perbaiki dengan textContent. Lanjutkan dengan challenge DOM XSS di Juice Shop.",
+  "hasil": "Mengenali sink berbahaya di kode frontend."
+ },
+ {
+  "nomor": 156,
+  "judul": "Pertahanan XSS Berlapis: Encoding, CSP, Sanitizer",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Defense in depth.",
+  "praktik": "Terapkan encoding sesuai konteks, CSP tanpa unsafe-inline, dan DOMPurify pada fitur rich-text. Uji dengan 10 payload dan catat kontrol mana yang menghentikan tiap payload.",
+  "hasil": "Strategi XSS berlapis yang terukur."
+ },
+ {
+  "nomor": 157,
+  "judul": "Broken Access Control Lanjutan: Forced Browsing dan Eskalasi",
+  "fokus": "Cyber Security",
+  "materi": "Akses via URL langsung, parameter peran, method HTTP berbeda.",
+  "praktik": "Tambahkan /admin yang hanya disembunyikan di UI, akses langsung sebagai user biasa, coba PUT/DELETE. Perbaiki dengan otorisasi di server dan tambahkan test.",
+  "hasil": "Yakin bahwa menyembunyikan UI bukan kontrol akses."
+ },
+ {
+  "nomor": 158,
+  "judul": "Cacat Autentikasi: Reset Password dan Enumerasi User",
+  "fokus": "Cyber Security",
+  "materi": "Token reset lemah, perbedaan respons, rate limit.",
+  "praktik": "Buat alur reset password lab dengan token yang dapat ditebak (misalnya berbasis waktu) dan tunjukkan penebakan di lab lokal. Perbaiki dengan secrets, kedaluwarsa, sekali pakai, dan respons seragam.",
+  "hasil": "Alur reset password yang aman."
+ },
+ {
+  "nomor": 159,
+  "judul": "Security Misconfiguration: Default, Listing, Verbose",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Konfigurasi bawaan, direktori terbuka, file backup tertinggal.",
+  "praktik": "Di VM, aktifkan directory listing Nginx dan taruh backup.zip dummy serta folder .git di web root. Temukan dengan curl dan ffuf pada VM-mu, tutup, verifikasi.",
+  "hasil": "Checklist misconfiguration web server."
+ },
+ {
+  "nomor": 160,
+  "judul": "SSRF: Konsep, Lab Lokal, dan Allowlist",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Server melakukan request atas nama pengguna.",
+  "praktik": "Buat fitur \"ambil URL\" rentan di lab, akses layanan internal lokal dummy lewat server. Perbaiki dengan allowlist host, validasi skema, dan blokir IP privat/loopback setelah resolusi DNS.",
+  "hasil": "Memahami SSRF dan perbaikan berlapisnya."
+ },
+ {
+  "nomor": 161,
+  "judul": "File Upload: Risiko dan Perbaikan",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Validasi ekstensi, MIME, magic bytes, lokasi penyimpanan.",
+  "praktik": "Buat upload rentan di lab, unggah file ekstensi ganda dan MIME palsu, lihat dampaknya. Perbaiki (allowlist, nama acak, simpan di luar web root, batas ukuran), uji ulang.",
+  "hasil": "Fitur upload yang aman."
+ },
+ {
+  "nomor": 162,
+  "judul": "Deserialisasi Tidak Aman dan XXE: Konsep dan Demo Lokal",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Data tak tepercaya diubah menjadi objek atau entitas.",
+  "praktik": "Di mesin lokal, tunjukkan bahwa pickle.loads pada data tak tepercaya bisa menjalankan kode (payload hanya mencetak teks). Ganti dengan JSON. Konfigurasi parser XML dengan entity dimatikan.",
+  "hasil": "Aturan: jangan deserialisasi data tak tepercaya dengan format yang dapat mengeksekusi kode."
+ },
+ {
+  "nomor": 163,
+  "judul": "Open Redirect dan Clickjacking",
+  "fokus": "Cyber Security",
+  "materi": "Redirect berdasarkan parameter, framing.",
+  "praktik": "Buat parameter next rentan di lab dan buktikan redirect ke domain lab lain. Perbaiki dengan allowlist. Uji framing dengan iframe lokal, perbaiki dengan frame-ancestors.",
+  "hasil": "Dua kelas bug yang sering diremehkan, selesai diuji."
+ },
+ {
+  "nomor": 164,
+  "judul": "Business Logic: Race Condition dan Manipulasi Nilai",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Bug logika, TOCTOU, nilai yang dipercaya dari klien.",
+  "praktik": "Buat fitur \"voucher sekali pakai\" dan \"harga dari klien\" di lab. Tunjukkan pemakaian ganda lewat request paralel dari script lokal, perbaiki dengan transaksi/lock dan harga dari server.",
+  "hasil": "Memahami bug yang tidak terdeteksi scanner."
+ },
+ {
+  "nomor": 165,
+  "judul": "Komponen Rentan dan Outdated: pip-audit",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "CVE pada dependency.",
+  "praktik": "Jalankan pip-audit pada proyek Flask-mu, perbarui satu dependency, jalankan test. Tulis alasan untuk temuan yang ditunda.",
+  "hasil": "Proses audit dependency yang dapat diulang."
+ },
+ {
+  "nomor": 166,
+  "judul": "Pinning Dependency dan SBOM Dasar",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Lockfile, hash pinning, SBOM.",
+  "praktik": "Buat requirements.txt dengan versi terkunci, instal dengan --require-hashes bila memungkinkan. Hasilkan SBOM (CycloneDX) dan baca isinya.",
+  "hasil": "Daftar komponen yang bisa diaudit."
+ },
+ {
+  "nomor": 167,
+  "judul": "Kegagalan Kriptografi: Kesalahan Umum",
+  "fokus": "Cyber Security + Software Development + AI",
+  "materi": "MD5/SHA1 untuk password, ECB, IV statis, key hardcode, random untuk token.",
+  "praktik": "Tulis contoh Python yang buruk (MD5 password, random untuk token, key hardcode) dan jelaskan alasannya. Ganti dengan secrets, argon2/bcrypt, dan AES-GCM lewat cryptography. Minta AI mengaudit kodenya, periksa jawabannya.",
+  "hasil": "Daftar anti-pattern kripto yang dikenali di kode."
+ },
+ {
+  "nomor": 168,
+  "judul": "Kripto Praktis: Simetris, Asimetris, openssl",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Kunci simetris vs asimetris, enkripsi vs tanda tangan.",
+  "praktik": "Dengan openssl atau gpg, enkripsi file dengan passphrase, buat key pair, enkripsi untuk public key dan dekripsi dengan private key. Tanda tangani file lalu verifikasi.",
+  "hasil": "Memahami kripto lewat operasi nyata."
+ },
+ {
+  "nomor": 169,
+  "judul": "Tanda Tangan Digital, Rantai Sertifikat, dan PKI",
+  "fokus": "Cyber Security + Networking",
+  "materi": "CA, rantai kepercayaan, kedaluwarsa, pencabutan.",
+  "praktik": "Buat CA lab sendiri dan tandatangani sertifikat server dengannya. Impor CA ke browser lab saja, bandingkan dengan self-signed Modul 36, periksa rantai dengan openssl verify.",
+  "hasil": "Memahami mengapa browser mempercayai sebuah sertifikat."
+ },
+ {
+  "nomor": 170,
+  "judul": "PortSwigger Academy: Access Control",
+  "fokus": "Cyber Security",
+  "materi": "Variasi IDOR, parameter peran, akses lintas konteks.",
+  "praktik": "Kerjakan 4 lab access control tingkat Apprentice–Practitioner. Untuk tiap lab tulis akar masalah dan perbaikan yang akan kamu terapkan jika itu appmu.",
+  "hasil": "Pola access control pada target latihan resmi."
+ },
+ {
+  "nomor": 171,
+  "judul": "PortSwigger Academy: Authentication",
+  "fokus": "Cyber Security",
+  "materi": "Enumerasi user, logika login, brute force, reset password.",
+  "praktik": "Kerjakan 4 lab authentication tingkat Apprentice. Catat pertahanan yang seharusnya ada dan bandingkan dengan implementasi Modul 61–64 dan 158.",
+  "hasil": "Memvalidasi pemahamanmu pada target resmi."
+ },
+ {
+  "nomor": 172,
+  "judul": "PortSwigger Academy: XSS",
+  "fokus": "Cyber Security",
+  "materi": "Reflected, stored, DOM XSS dalam konteks berbeda (HTML, atribut, JavaScript).",
+  "praktik": "Kerjakan 5 lab XSS tingkat Apprentice, tulis konteks output tiap lab dan encoding yang tepat.",
+  "hasil": "Memilih encoding berdasarkan konteks."
+ },
+ {
+  "nomor": 173,
+  "judul": "PortSwigger Academy: Injection Lain dan Path Traversal",
+  "fokus": "Cyber Security",
+  "materi": "OS command injection, path traversal, dan variasi SQLi.",
+  "praktik": "Kerjakan 4 lab (command injection dan path traversal). Hubungkan tiap solusi dengan perbaikan di Modul 99, 137, dan 138.",
+  "hasil": "Pola injeksi dikenali lintas konteks."
+ },
+ {
+  "nomor": 174,
+  "judul": "Pengujian API: OWASP API Top 10 pada API Lokal",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Risiko khusus API (BOLA, rate limiting, exposure berlebih).",
+  "praktik": "Uji API lokalmu dengan Burp/Bruno terhadap 6 kategori OWASP API Top 10 yang relevan. Catat hasil, perbaiki, dan tulis test.",
+  "hasil": "Daftar uji API yang bisa diulang."
+ },
+ {
+  "nomor": 175,
+  "judul": "Fuzzing Sederhana: ffuf dan Burp Intruder pada Target Lokal",
+  "fokus": "Cyber Security",
+  "materi": "Fuzzing path dan parameter, wordlist, filter respons.",
+  "praktik": "Pada app lab atau VM milikmu, temukan path tersembunyi yang kamu tanam sendiri dengan ffuf. Lihat jejaknya di log Nginx dan buat rate limit yang menahannya.",
+  "hasil": "Memahami fuzzing dari sisi penguji dan sisi pertahanan."
+ },
+ {
+  "nomor": 176,
+  "judul": "Logging dan Monitoring Failures: Apa yang Tidak Tercatat",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Kejadian keamanan yang harus dicatat.",
+  "praktik": "Ulangi 5 serangan lab sebelumnya dan periksa log: mana yang tercatat jelas, mana yang tidak. Tambahkan logging untuk yang tidak tercatat dan buat query yang mendeteksinya.",
+  "hasil": "Aplikasi yang meninggalkan jejak berguna."
+ },
+ {
+  "nomor": 177,
+  "judul": "Menulis Laporan Temuan",
+  "fokus": "Cyber Security",
+  "materi": "Struktur laporan: ringkasan, dampak, langkah reproduksi, bukti, perbaikan.",
+  "praktik": "Pilih 3 temuan dari lab sendiri dan tulis laporan terpisah dengan template. Minta orang lain atau AI mencoba mereproduksi hanya dari laporanmu, perbaiki bagian yang tidak jelas.",
+  "hasil": "Laporan yang bisa direproduksi orang lain."
+ },
+ {
+  "nomor": 178,
+  "judul": "CVSS dan Prioritas Risiko Praktis",
+  "fokus": "Cyber Security",
+  "materi": "Skor CVSS, konteks, eksploitabilitas, dampak bisnis.",
+  "praktik": "Beri skor CVSS pada 5 temuan lab dengan kalkulator resmi dan urutkan prioritas perbaikan. Bandingkan dengan penilaian intuitifmu dan jelaskan perbedaannya.",
+  "hasil": "Prioritas perbaikan yang beralasan."
+ },
+ {
+  "nomor": 179,
+  "judul": "Threat Modeling dengan STRIDE",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Data flow diagram, trust boundary, STRIDE.",
+  "praktik": "Gambar data flow diagram app catatan + Nginx + MariaDB (teks atau Mermaid), tandai trust boundary, dan daftar ancaman per kategori STRIDE beserta mitigasinya.",
+  "hasil": "Model ancaman tertulis untuk aplikasi sendiri."
+ },
+ {
+  "nomor": 180,
+  "judul": "AI untuk Threat Modeling: Brainstorm, Lalu Validasi",
+  "fokus": "AI + Cyber Security",
+  "materi": "AI memperluas ide ancaman, tetapi prioritas dan relevansi adalah penilaianmu.",
+  "praktik": "Berikan deskripsi arsitektur (tanpa secret) ke AI dan minta ancaman tambahan di luar daftar Modul 179. Nilai tiap ancaman: relevan, tidak relevan, atau sudah tercakup. Tambahkan yang relevan.",
+  "hasil": "Threat model yang lebih lengkap dengan penyaringan kritis."
+ },
+ {
+  "nomor": 181,
+  "judul": "Ketika AI Salah: Mengenali Hallucination pada Saran Security",
+  "fokus": "AI + Cyber Security",
+  "materi": "Nama fungsi atau opsi yang tidak ada, saran usang, kepercayaan diri yang menyesatkan.",
+  "praktik": "Ajukan 8 pertanyaan teknis security (konfigurasi header, opsi sshd_config, fungsi library) ke AI. Cek tiap jawaban dengan dokumentasi resmi atau eksperimen, hitung yang salah atau usang, catat pola kesalahannya.",
+  "hasil": "Daftar tanda bahaya jawaban AI dan kebiasaan verifikasi."
+ },
+ {
+  "nomor": 182,
+  "judul": "Secure Code Review Manual: Flask",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Alur review: entry point → data flow → sink → kontrol.",
+  "praktik": "Review kode app Flask milikmu dengan checklist (input, auth, session, query, output, error, secret, dependency). Tandai 10 temuan atau kontrol yang sudah benar dengan nomor baris.",
+  "hasil": "Metode review yang sistematis."
+ },
+ {
+  "nomor": 183,
+  "judul": "Secure Code Review: PHP",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Pola rentan di PHP (include, mysqli_query string, echo tanpa encoding).",
+  "praktik": "Baca source DVWA (level Low) dan satu contoh PHP buatan sendiri. Tandai sink berbahaya, tulis versi aman dengan PDO dan htmlspecialchars, bandingkan dengan Impossible level DVWA.",
+  "hasil": "Membaca kode rentan di bahasa yang sudah kamu kenal."
+ },
+ {
+  "nomor": 184,
+  "judul": "Static Analysis: Bandit dan Semgrep",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Aturan analisis statis, false positive.",
+  "praktik": "Jalankan bandit dan semgrep pada app Flask-mu, bandingkan hasil dengan review manual Modul 182. Perbaiki 3 temuan valid dan tandai alasan pada false positive.",
+  "hasil": "Static analysis sebagai pelengkap review."
+ },
+ {
+  "nomor": 185,
+  "judul": "Checkpoint 6: Uji Lengkap → Laporan → Perbaikan → Uji Ulang",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menggabungkan Modul 146–184.",
+  "praktik": "Pilih app lab terbaikmu. Lakukan threat model singkat, uji dengan Burp/ZAP, review kode, tulis laporan 5 temuan dengan CVSS, perbaiki, tambahkan test, dan uji ulang. Dokumentasikan di repo.",
+  "hasil": "Alur lengkap pengujian dan perbaikan dengan bukti."
+ },
+ {
+  "nomor": 186,
+  "judul": "Python OOP: Class, Object, Enkapsulasi",
+  "fokus": "Software Development",
+  "materi": "Class, atribut, method, enkapsulasi.",
+  "praktik": "Refactor modul db.py atau logika catatan menjadi class NoteRepository dan Note. Tulis test untuk memastikan perilaku tidak berubah.",
+  "hasil": "Kode berorientasi objek yang tetap teruji."
+ },
+ {
+  "nomor": 187,
+  "judul": "OOP Lanjutan: Inheritance, Composition, Dataclass",
+  "fokus": "Software Development",
+  "materi": "Kapan pewarisan dan kapan komposisi.",
+  "praktik": "Buat dataclass untuk model data, bandingkan desain pewarisan dan komposisi untuk dua jenis storage (SQLite dan file). Jelaskan pilihanmu.",
+  "hasil": "Memilih struktur kelas dengan alasan."
+ },
+ {
+  "nomor": 188,
+  "judul": "Struktur Data Praktis: Stack, Queue, Hash Map",
+  "fokus": "Software Development",
+  "materi": "Kapan dan mengapa memakai tiap struktur.",
+  "praktik": "Implementasikan stack dan queue (collections.deque), dan gunakan dict sebagai cache sederhana. Terapkan queue untuk antrian tugas kecil dan stack untuk validator tanda kurung.",
+  "hasil": "Struktur data dipakai pada masalah nyata."
+ },
+ {
+  "nomor": 189,
+  "judul": "Kompleksitas Waktu Praktis dengan timeit",
+  "fokus": "Software Development",
+  "materi": "O(1), O(n), O(n²) dengan eksperimen.",
+  "praktik": "Bandingkan pencarian di list vs set vs dict untuk 1.000, 100.000, dan 1.000.000 elemen dengan timeit. Plot atau catat hasilnya dan jelaskan polanya.",
+  "hasil": "Intuisi kompleksitas berdasarkan ukuran nyata."
+ },
+ {
+  "nomor": 190,
+  "judul": "Rekursi dan Algoritma Pencarian/Pengurutan Dasar",
+  "fokus": "Software Development",
+  "materi": "Rekursi, binary search, bubble vs merge sort.",
+  "praktik": "Tulis binary search rekursif dan iteratif, serta dua algoritma sort. Uji dengan data acak dan bandingkan waktu dengan sorted().",
+  "hasil": "Memahami algoritma dasar yang akan muncul di kuliah."
+ },
+ {
+  "nomor": 191,
+  "judul": "Clean Code dan Refactoring Kode Lama Sendiri",
+  "fokus": "Software Development + AI",
+  "materi": "Penamaan, fungsi kecil, duplikasi, kode mati.",
+  "praktik": "Pilih satu script lama dari Modul 11–24, refactor dengan test sebagai pengaman. Minta AI menyarankan perbaikan, terapkan hanya yang kamu pahami dan setujui.",
+  "hasil": "Kode lama yang lebih bersih dan tetap berfungsi."
+ },
+ {
+  "nomor": 192,
+  "judul": "Type Hints, Linting, dan Formatter",
+  "fokus": "Software Development",
+  "materi": "Type hints, ruff/flake8, black, mypy.",
+  "praktik": "Tambahkan type hints pada modul inti, jalankan ruff, black, dan mypy, perbaiki temuan. Atur konfigurasi di pyproject.toml.",
+  "hasil": "Standar kualitas kode otomatis."
+ },
+ {
+  "nomor": 193,
+  "judul": "Node.js dan npm: Runtime, Modul, package.json",
+  "fokus": "Software Development + Linux",
+  "materi": "Runtime JavaScript di luar browser, modul, manajemen paket.",
+  "praktik": "Pasang Node di WSL, buat proyek dengan npm init, tulis script yang membaca file dan memanggil API lokal, jalankan dengan node. Baca package.json dan package-lock.json.",
+  "hasil": "JavaScript sisi server dan ekosistem paketnya."
+ },
+ {
+  "nomor": 194,
+  "judul": "Express: API Sederhana",
+  "fokus": "Software Development",
+  "materi": "Routing, middleware, JSON.",
+  "praktik": "Buat ulang 3 endpoint API catatan di Express, bandingkan struktur dengan Flask, uji dengan koleksi Bruno yang sama.",
+  "hasil": "Memahami pola backend lintas bahasa."
+ },
+ {
+  "nomor": 195,
+  "judul": "Keamanan Express: helmet, Validasi, Rate Limit",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Middleware keamanan, validasi (zod), batas request.",
+  "praktik": "Tambahkan helmet, validasi skema dengan zod, dan express-rate-limit. Uji dengan curl dan loop, periksa header di DevTools.",
+  "hasil": "Praktik keamanan setara dengan versi Flask."
+ },
+ {
+  "nomor": 196,
+  "judul": "Supply Chain: Risiko npm install",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Typosquatting, dependency transitif, script instalasi, lockfile.",
+  "praktik": "Jalankan npm audit pada proyek Express-mu, periksa npm ls, baca skrip postinstall pada satu paket, aktifkan npm ci dan jelaskan perbedaannya dengan npm install.",
+  "hasil": "Kebiasaan memeriksa dependency sebelum memasangnya."
+ },
+ {
+  "nomor": 197,
+  "judul": "JavaScript Async, Promise, dan Event Loop",
+  "fokus": "Software Development",
+  "materi": "Event loop, callback, Promise, async/await, error handling.",
+  "praktik": "Tulis script yang memanggil 3 endpoint lokal secara berurutan vs paralel (Promise.all), ukur waktunya, tangani kegagalan sebagian.",
+  "hasil": "Memahami konkurensi di JavaScript dengan ukuran nyata."
+ },
+ {
+  "nomor": 198,
+  "judul": "Pagination, Caching, dan Performa Dasar API",
+  "fokus": "Software Development",
+  "materi": "Pagination, ETag/Cache-Control, batas query.",
+  "praktik": "Tambahkan pagination dan batas maksimum ke endpoint daftar, tambahkan header cache, ukur dengan curl -w dan DevTools. Pastikan batas mencegah permintaan sangat besar.",
+  "hasil": "API yang efisien dan tahan permintaan berlebih."
+ },
+ {
+  "nomor": 199,
+  "judul": "CI Dasar: GitHub Actions Menjalankan Test",
+  "fokus": "Software Development",
+  "materi": "Workflow, job, step, trigger.",
+  "praktik": "Tulis .github/workflows/test.yml yang memasang dependency dan menjalankan pytest pada setiap push dan PR. Rusak test sengaja dan lihat workflow gagal.",
+  "hasil": "Test berjalan otomatis pada setiap perubahan."
+ },
+ {
+  "nomor": 200,
+  "judul": "CI Security: Bandit, pip-audit, dan gitleaks di Actions",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Pemeriksaan keamanan sebagai bagian pipeline, tanpa membocorkan secret.",
+  "praktik": "Tambahkan job yang menjalankan bandit, pip-audit, dan gitleaks. Atur agar PR gagal bila ada temuan berat. Simpan secret hanya di GitHub Secrets.",
+  "hasil": "Pipeline yang menahan kode bermasalah sebelum merge."
+ },
+ {
+  "nomor": 201,
+  "judul": "Dockerfile: Image Aplikasi Sendiri",
+  "fokus": "Software Development + Linux",
+  "materi": "Layer, cache build, .dockerignore.",
+  "praktik": "Tulis Dockerfile untuk app Flask, build, jalankan, uji dengan curl. Tambahkan .dockerignore agar .env dan .git tidak masuk image.",
+  "hasil": "Aplikasi berjalan di container yang direproduksi dari satu file."
+ },
+ {
+  "nomor": 202,
+  "judul": "Hardening Container: Non-Root, Image Minimal, Trivy",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Hak akses container, ukuran permukaan serang, scan image.",
+  "praktik": "Ubah image agar berjalan sebagai user non-root dan memakai base image minimal. Scan dengan trivy, bandingkan temuan sebelum dan sesudah.",
+  "hasil": "Image yang lebih aman dengan bukti scan."
+ },
+ {
+  "nomor": 203,
+  "judul": "Docker Compose: App + Database + Proxy",
+  "fokus": "Software Development + Linux + Networking",
+  "materi": "Multi-container, network internal, volume.",
+  "praktik": "Tulis docker-compose.yml untuk Flask, MariaDB, dan Nginx. Pastikan database tidak diekspos ke host. Uji dengan curl dan docker compose logs.",
+  "hasil": "Stack lengkap berjalan dengan satu perintah."
+ },
+ {
+  "nomor": 204,
+  "judul": "Secrets di Container dan Compose",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Environment vs file secret, risiko docker inspect dan layer image.",
+  "praktik": "Tunjukkan secret yang terlihat lewat docker inspect dan docker history pada contoh yang buruk. Pindahkan ke Docker secrets atau file env yang tidak masuk image, verifikasi ulang.",
+  "hasil": "Pola secret yang tidak tertinggal di image."
+ },
+ {
+  "nomor": 205,
+  "judul": "Deploy Publik Aplikasi Sendiri: Env Var, HTTPS, Batasan Risiko",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Mengekspos aplikasi ke internet berarti menerima traffic nyata.",
+  "praktik": "Deploy aplikasi kecil buatanmu (tanpa data sensitif) ke layanan hosting gratis atau VPS milikmu dengan HTTPS dan env var. Aktifkan rate limit dan logging, baca log traffic nyata selama 24 jam.",
+  "hasil": "Pengalaman menjalankan aplikasi publik dengan kontrol dasar."
+ },
+ {
+  "nomor": 206,
+  "judul": "Monitoring dan Alerting Dasar: Health Check, Log Level",
+  "fokus": "Software Development + Linux",
+  "materi": "Health endpoint, level log, alert sederhana.",
+  "praktik": "Tambahkan endpoint /health, panggil dari healthcheck.py Modul 143, kirim notifikasi (email atau webhook ke chat pribadi) ketika gagal.",
+  "hasil": "Mengetahui layanan bermasalah sebelum pengguna melapor."
+ },
+ {
+  "nomor": 207,
+  "judul": "Incident Response Dasar: Detect, Contain, Eradicate, Recover",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Fase respons insiden dan catatan kronologi.",
+  "praktik": "Simulasi pada VM milikmu: tanam satu \"insiden\" (user mencurigakan, cron job aneh, secret bocor). Jalankan fase deteksi → isolasi → pembersihan → pemulihan, tulis timeline dan pelajaran.",
+  "hasil": "Prosedur respons insiden yang pernah dipraktikkan."
+ },
+ {
+  "nomor": 208,
+  "judul": "Forensik Ringan Linux: Log, History, Timestamp",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Jejak aktivitas: last, lastb, .bash_history, stat, find -mtime.",
+  "praktik": "Pada VM dari Modul 207, rekonstruksi apa yang terjadi hanya dari jejak sistem. Tulis temuan dengan bukti perintah dan keluarannya.",
+  "hasil": "Kemampuan merekonstruksi kejadian dari jejak."
+ },
+ {
+  "nomor": 209,
+  "judul": "Analisis Log Lanjutan: Aktivitas Mencurigakan",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Korelasi log dari beberapa sumber.",
+  "praktik": "Gabungkan log auth, Nginx, dan aplikasi dari lab-mu (termasuk jejak scan dan brute force yang kamu buat sendiri). Tulis script yang mengkorelasi IP dan waktu menjadi satu timeline.",
+  "hasil": "Timeline insiden dari log multi-sumber."
+ },
+ {
+  "nomor": 210,
+  "judul": "CVE dan Advisory: Membaca, Mencocokkan Versi, Patching",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Struktur CVE, versi terdampak, patch.",
+  "praktik": "Pilih satu CVE yang relevan dengan paket di VM atau proyekmu (dari NVD atau advisory vendor). Cek apakah versimu terdampak, baca penjelasan akar masalah, terapkan patch atau upgrade, verifikasi.",
+  "hasil": "Alur nyata dari advisory sampai patch terverifikasi."
+ },
+ {
+  "nomor": 211,
+  "judul": "OAuth2/OIDC: Konsep dan Login dengan Provider",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Authorization code flow, state, redirect URI.",
+  "praktik": "Daftarkan OAuth App di GitHub milikmu, implementasikan login dengan Authlib di app lokal. Amati redirect di DevTools, uji bahwa state mencegah request palsu.",
+  "hasil": "Memahami login pihak ketiga dari ujung ke ujung."
+ },
+ {
+  "nomor": 212,
+  "judul": "MFA/TOTP: Implementasi dengan pyotp",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "TOTP, secret per pengguna, recovery code.",
+  "praktik": "Tambahkan MFA TOTP ke login lab, uji dengan aplikasi authenticator, simpan secret terenkripsi, buat recovery code sekali pakai.",
+  "hasil": "Login dua faktor yang dapat dijelaskan komponennya."
+ },
+ {
+  "nomor": 213,
+  "judul": "Penyimpanan Token di Frontend: localStorage vs Cookie",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Risiko XSS vs CSRF pada tiap pilihan.",
+  "praktik": "Buat dua versi frontend: token di localStorage dan di cookie HttpOnly. Simulasikan XSS lab pada keduanya dan bandingkan apa yang dapat dibaca. Catat trade-off.",
+  "hasil": "Keputusan penyimpanan token yang berdasar."
+ },
+ {
+  "nomor": 214,
+  "judul": "Frontend Modern Ringan: Vite dan Struktur Proyek",
+  "fokus": "Software Development",
+  "materi": "Bundler, modul ES, build vs dev server.",
+  "praktik": "Buat proyek Vite sederhana (tanpa framework besar) yang memanggil API-mu, jalankan build, lihat hasil di dist/.",
+  "hasil": "Pemahaman alur kerja frontend modern."
+ },
+ {
+  "nomor": 215,
+  "judul": "Keamanan Frontend: Dependency, Source Map, Secret di Bundle",
+  "fokus": "Cyber Security + Software Development",
+  "materi": "Apa yang terlihat oleh siapa pun di browser.",
+  "praktik": "Cari string di bundle hasil build, sengaja taruh key dummy di kode frontend dan temukan di DevTools. Pindahkan logika ke server. Periksa source map dan nonaktifkan di produksi.",
+  "hasil": "Aturan: apa pun di frontend itu publik."
+ },
+ {
+  "nomor": 216,
+  "judul": "Segmentasi Jaringan: Dua Subnet di Lab",
+  "fokus": "Networking + Cyber Security + Linux",
+  "materi": "Segmentasi, routing antar subnet, aturan firewall antar zona.",
+  "praktik": "Buat dua jaringan host-only (web dan database) dengan satu VM router/firewall. Atur agar hanya VM web yang bisa mengakses port database, uji dari VM lain.",
+  "hasil": "Arsitektur jaringan dengan batas yang ditegakkan."
+ },
+ {
+  "nomor": 217,
+  "judul": "VPN WireGuard antar VM Lab",
+  "fokus": "Networking + Cyber Security + Linux",
+  "materi": "Tunnel terenkripsi, key pair, AllowedIPs.",
+  "praktik": "Pasang WireGuard di dua VM, konfigurasi tunnel, uji ping dan akses layanan internal lewat tunnel. Tangkap traffic dan lihat bahwa isinya terenkripsi.",
+  "hasil": "Memahami VPN dari konfigurasi dan paket nyata."
+ },
+ {
+  "nomor": 218,
+  "judul": "Sniffing Login HTTP di Lab vs HTTPS",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Mengapa HTTP polos berbahaya pada jaringan bersama.",
+  "praktik": "Di jaringan lab milikmu, tangkap login ke app HTTP dengan Wireshark dan baca kredensial dummy. Aktifkan HTTPS, tangkap lagi, bandingkan. Tulis kontrol yang mencegahnya.",
+  "hasil": "Bukti konkret manfaat TLS."
+ },
+ {
+  "nomor": 219,
+  "judul": "AI untuk Dokumentasi Teknis dan README yang Akurat",
+  "fokus": "AI + Software Development",
+  "materi": "AI mempercepat penulisan, tetapi dokumentasi harus cocok dengan kenyataan.",
+  "praktik": "Minta AI membuat README dari repo-mu. Ikuti README itu dari awal pada folder bersih, catat setiap langkah yang gagal atau tidak akurat, perbaiki sampai bisa diikuti sepenuhnya.",
+  "hasil": "README yang terbukti bisa dijalankan."
+ },
+ {
+  "nomor": 220,
+  "judul": "Checkpoint 7: Pipeline Aman End-to-End",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menggabungkan Modul 186–219.",
+  "praktik": "Untuk satu aplikasi kecil: kode dengan test, CI dengan scan keamanan, Docker image non-root, deploy lab dengan Nginx TLS, health check, dan dokumentasi. Ubah satu baris dengan sengaja menjadi rentan dan lihat pipeline menahannya.",
+  "hasil": "Pipeline kecil yang menegakkan kualitas dan keamanan."
+ },
+ {
+  "nomor": 221,
+  "judul": "Lab Gabungan: Rencana Pengujian Multi-Komponen",
+  "fokus": "Cyber Security + Networking + Linux",
+  "materi": "Merencanakan pengujian sebelum menjalankan tool.",
+  "praktik": "Siapkan lab dua VM (web + database) dari Modul 216. Tulis rencana uji: aset, scope, urutan (jaringan → layanan → web → host), dan kriteria keberhasilan. Tulis di lab-plan.md.",
+  "hasil": "Rencana pengujian yang dapat dijalankan."
+ },
+ {
+  "nomor": 222,
+  "judul": "Enumerasi Layanan di Jaringan Lab Sendiri",
+  "fokus": "Cyber Security + Networking",
+  "materi": "Discovery host, port, versi layanan.",
+  "praktik": "Dari VM klien ke subnet lab milikmu: nmap untuk host discovery dan service version. Bandingkan dengan inventaris yang kamu ketahui dan temukan layanan yang terlupa.",
+  "hasil": "Inventaris layanan yang diverifikasi."
+ },
+ {
+  "nomor": 223,
+  "judul": "Layanan Lama Tidak Aman: FTP/Telnet vs SSH di Lab",
+  "fokus": "Cyber Security + Networking + Linux",
+  "materi": "Protokol tanpa enkripsi dan penggantinya.",
+  "praktik": "Aktifkan FTP dan Telnet di VM lab, tangkap kredensial dummy dengan Wireshark, lalu nonaktifkan dan ganti dengan SFTP/SSH. Scan ulang dan verifikasi.",
+  "hasil": "Bukti dan alasan meninggalkan protokol lama."
+ },
+ {
+  "nomor": 224,
+  "judul": "Audit Misconfigurasi Hak Akses di Linux",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Aturan sudo terlalu longgar, SUID tidak perlu, cron writable.",
+  "praktik": "Di VM, tanam 3 misconfigurasi yang dapat menaikkan hak akses (aturan sudo, script cron writable, binari SUID tidak perlu). Temukan dengan audit manual, jelaskan jalur risikonya, perbaiki, audit ulang.",
+  "hasil": "Mengenali dan menutup celah eskalasi hak akses."
+ },
+ {
+  "nomor": 225,
+  "judul": "Linux Hardening: Checklist dan Lynis",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Baseline hardening dan pengukuran.",
+  "praktik": "Jalankan lynis audit system pada VM, baca rekomendasi, terapkan 8 perbaikan yang masuk akal, jalankan ulang dan bandingkan skor serta alasannya.",
+  "hasil": "Hardening terukur."
+ },
+ {
+  "nomor": 226,
+  "judul": "auditd: Memantau File dan Perintah Penting",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Audit subsistem Linux, rule, event.",
+  "praktik": "Pasang auditd, buat rule untuk memantau /etc/passwd, /etc/ssh/sshd_config, dan penggunaan sudo. Ubah file tersebut dan baca eventnya dengan ausearch.",
+  "hasil": "Pemantauan perubahan penting pada host."
+ },
+ {
+  "nomor": 227,
+  "judul": "Walkthrough Satu Request End-to-End",
+  "fokus": "Software Development + Cyber Security + Networking + Linux",
+  "materi": "DNS → TCP → TLS → HTTP → Nginx → app → database → respons.",
+  "praktik": "Pada lab-mu, lacak satu request dengan dig, Wireshark, curl -v, log Nginx, log app, dan log database. Tulis diagram dan titik kontrol keamanan di tiap tahap.",
+  "hasil": "Pemahaman menyeluruh yang menyatukan semua bidang."
+ },
+ {
+  "nomor": 228,
+  "judul": "Wargame Linux: OverTheWire Bandit",
+  "fokus": "Linux + Cyber Security",
+  "materi": "Latihan terminal dan konsep Linux pada platform wargame resmi untuk pemula.",
+  "praktik": "Kerjakan Bandit level 0–10 lewat SSH, tulis perintah yang dipakai dan konsep Linux di balik tiap level. Jangan simpan password level di repo publik.",
+  "hasil": "Penguatan Linux lewat tantangan terstruktur."
+ },
+ {
+  "nomor": 229,
+  "judul": "CTF Web Pemula: picoCTF",
+  "fokus": "Cyber Security",
+  "materi": "Mengaplikasikan teknik web pada tantangan resmi.",
+  "praktik": "Kerjakan 3 tantangan Web Exploitation tingkat pemula di picoCTF dengan DevTools, curl, atau Burp. Tulis pendekatan, jalan buntu, dan solusi.",
+  "hasil": "Pengalaman CTF web pada platform resmi."
+ },
+ {
+  "nomor": 230,
+  "judul": "CTF Ringan: Decode, Hash, Metadata",
+  "fokus": "Cyber Security + Linux",
+  "materi": "Encoding, hash, metadata file, string.",
+  "praktik": "Kerjakan 4 tantangan General Skills/Forensics pemula di picoCTF dengan base64, file, strings, xxd, exiftool. Catat alat dan alasannya.",
+  "hasil": "Kelancaran memakai tool analisis file dasar."
+ },
+ {
+  "nomor": 231,
+  "judul": "Write-up Teknis yang Dapat Diulang",
+  "fokus": "Cyber Security + AI",
+  "materi": "Write-up sebagai catatan belajar dan portofolio.",
+  "praktik": "Pilih 2 tantangan dari Modul 228–230, tulis write-up berisi tujuan, langkah, perintah, dan pelajaran. Minta AI merapikan bahasa, pastikan isi teknis tidak berubah.",
+  "hasil": "Dua write-up yang bisa diikuti orang lain."
+ },
+ {
+  "nomor": 232,
+  "judul": "Rancang Lab Rentan Sendiri: 5 Bug Terkontrol",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Membuat bug sengaja memperdalam pemahaman penyebabnya.",
+  "praktik": "Bangun app kecil dengan 5 bug (misalnya SQLi, IDOR, XSS, path traversal, secret hardcoded). Tulis kunci jawaban dan simpan terpisah. Jangan lihat kode setelah selesai.",
+  "hasil": "Lab buatan sendiri dengan kunci jawaban tersimpan."
+ },
+ {
+  "nomor": 233,
+  "judul": "Uji Black-Box Lab Sendiri Setelah Jeda",
+  "fokus": "Cyber Security",
+  "materi": "Menguji tanpa mengingat detail implementasi.",
+  "praktik": "Setelah jeda beberapa hari, uji lab Modul 232 dari luar dengan Burp, curl, dan browser. Catat bug yang ditemukan dan yang terlewat, lalu bandingkan dengan kunci jawaban.",
+  "hasil": "Evaluasi jujur kemampuan pengujianmu."
+ },
+ {
+  "nomor": 234,
+  "judul": "Perbaiki dan Tulis Regression Test untuk Kelima Bug",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Siklus perbaikan terverifikasi.",
+  "praktik": "Perbaiki ke-5 bug, tulis regression test untuk masing-masing, jalankan lewat CI.",
+  "hasil": "Versi aman dari lab dengan test yang menjaganya."
+ },
+ {
+  "nomor": 235,
+  "judul": "Evaluasi AI vs Manual pada Perbaikan",
+  "fokus": "AI + Cyber Security",
+  "materi": "AI sebagai penguji kedua dan batasannya.",
+  "praktik": "Beri AI kode versi sebelum dan sesudah perbaikan, minta menilai apakah tiap bug benar-benar tertutup. Uji klaimnya dengan payload, catat saran yang tepat dan yang tidak.",
+  "hasil": "Kalibrasi kapan memercayai dan kapan menguji ulang saran AI."
+ },
+ {
+  "nomor": 236,
+  "judul": "Python Security Automation: Checker untuk App Sendiri",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Mengotomasi pengecekan konfigurasi dan perilaku.",
+  "praktik": "Tulis check_app.py dengan requests yang memeriksa header keamanan, cookie flag, respons error, dan akses tanpa token pada app lokalmu. Keluarkan laporan teks dan exit code.",
+  "hasil": "Alat pemeriksa yang dapat dijalankan di CI."
+ },
+ {
+  "nomor": 237,
+  "judul": "Python Parsing: Membaca PCAP",
+  "fokus": "Software Development + Networking + Cyber Security",
+  "materi": "Struktur paket dan membaca file capture.",
+  "praktik": "Simpan capture Wireshark dari lab-mu, baca dengan scapy atau pyshark (hanya membaca), hitung paket per protokol dan daftar host teratas. Cocokkan dengan hasil Wireshark.",
+  "hasil": "Analisis capture secara terprogram."
+ },
+ {
+  "nomor": 238,
+  "judul": "Pipeline Audit Lokal → Laporan Markdown",
+  "fokus": "Linux + Software Development + Cyber Security",
+  "materi": "Menggabungkan beberapa pemeriksaan menjadi satu laporan.",
+  "praktik": "Tulis script Bash/Python yang menjalankan audit permission, port terbuka, update tertunda, dan healthcheck, lalu menghasilkan laporan Markdown berstempel waktu. Jalankan terjadwal di VM.",
+  "hasil": "Laporan audit otomatis yang dapat dibandingkan dari waktu ke waktu."
+ },
+ {
+  "nomor": 239,
+  "judul": "Deteksi Brute Force dari auth.log dengan Alert",
+  "fokus": "Cyber Security + Linux + Software Development",
+  "materi": "Threshold, jendela waktu, tindakan otomatis.",
+  "praktik": "Tulis script yang membaca auth.log, mendeteksi N gagal login dari satu IP dalam M menit, dan memberi alert. Uji dengan percobaan login gagal dari VM klien milikmu.",
+  "hasil": "Detektor sederhana yang kamu pahami cara kerjanya."
+ },
+ {
+  "nomor": 240,
+  "judul": "Transaksi, Isolasi, dan Race Condition di Database",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "ACID, transaksi, level isolasi, locking.",
+  "praktik": "Buat skenario saldo/stok dengan dua koneksi paralel yang menyebabkan inkonsistensi. Perbaiki dengan transaksi dan SELECT ... FOR UPDATE, uji ulang.",
+  "hasil": "Integritas data pada akses bersamaan."
+ },
+ {
+  "nomor": 241,
+  "judul": "Arsitektur Aplikasi: Monolit, Microservice, Trust Boundary",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Trade-off arsitektur dan batas kepercayaan.",
+  "praktik": "Gambar dua versi arsitektur app catatan (monolit dan dipecah menjadi auth service + notes service). Tandai trust boundary, komunikasi antar layanan, dan risiko keamanan baru.",
+  "hasil": "Memahami dampak arsitektur pada keamanan."
+ },
+ {
+  "nomor": 242,
+  "judul": "Threat Model Arsitektur Multi-Komponen",
+  "fokus": "Cyber Security",
+  "materi": "Ancaman antar komponen, autentikasi antar layanan.",
+  "praktik": "Terapkan STRIDE pada arsitektur Modul 241 (versi pecah). Tulis 10 ancaman, mitigasi, dan 3 test yang bisa kamu uji di lab.",
+  "hasil": "Threat model yang melampaui satu aplikasi."
+ },
+ {
+  "nomor": 243,
+  "judul": "Etika, Hukum, dan Responsible Disclosure",
+  "fokus": "Cyber Security",
+  "materi": "Batas legal pengujian, pelaporan kerentanan yang bertanggung jawab, perlindungan data pribadi.",
+  "praktik": "Baca dari sumber resmi ringkasan ketentuan akses ilegal pada UU ITE dan pokok UU Pelindungan Data Pribadi, serta kebijakan disclosure satu program bug bounty. Tulis ringkasan dan kebijakan pribadi bila menemukan kerentanan.",
+  "hasil": "Pegangan etika dan hukum untuk praktik security jangka panjang."
+ },
+ {
+  "nomor": 244,
+  "judul": "Portofolio Teknis: Repo Rapi, README, Write-up",
+  "fokus": "Software Development + AI",
+  "materi": "Mempresentasikan hasil belajar dengan jujur.",
+  "praktik": "Pilih 3 repo terbaik, rapikan struktur, README, dan lisensi. Bersihkan secret dengan gitleaks. Minta AI mereview kejelasan README, terapkan yang berguna, dan buat satu halaman indeks portofolio.",
+  "hasil": "Portofolio teknis yang aman dan jelas."
+ },
+ {
+  "nomor": 245,
+  "judul": "Audit Ulang Peta Skill",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Mengukur kemajuan terhadap baseline.",
+  "praktik": "Buka peta-skill.md dari Modul 1, nilai ulang tiap skill dengan bukti repo, dan tambahkan bidang baru (Docker, kripto, CI, forensik). Tandai 3 area terlemah.",
+  "hasil": "Gambaran jujur posisi skill sekarang dan area yang perlu diperkuat."
+ },
+ {
+  "nomor": 246,
+  "judul": "Tantangan Integrasi 1: API Baru dari Spesifikasi",
+  "fokus": "Software Development + Cyber Security + AI",
+  "materi": "Mengerjakan alur penuh dari spesifikasi baru.",
+  "praktik": "Tulis spesifikasi API baru (misalnya \"reminder\"), bangun dengan Flask atau Express, tambahkan auth, validasi, test, dan CI. Uji sendiri dengan checklist Modul 182 lalu minta AI sebagai penguji kedua.",
+  "hasil": "API baru yang aman dibangun tanpa panduan langkah demi langkah."
+ },
+ {
+  "nomor": 247,
+  "judul": "Tantangan Integrasi 2: Audit Server dari Snapshot Bersih",
+  "fokus": "Linux + Cyber Security + Networking",
+  "materi": "Mengaudit tanpa mengingat konfigurasi.",
+  "praktik": "Provision VM baru dengan provision.sh, tanam 5 kelemahan lewat script terpisah yang tidak kamu baca ulang, lalu audit dengan Nmap, Lynis, dan pemeriksaan manual. Tulis laporan dan perbaiki.",
+  "hasil": "Kemampuan audit server dengan metode sendiri."
+ },
+ {
+  "nomor": 248,
+  "judul": "Tantangan Integrasi 3: Review Proyek Open Source Kecil Secara Lokal",
+  "fokus": "Software Development + Cyber Security",
+  "materi": "Membaca kode orang lain.",
+  "praktik": "Pilih proyek open source kecil (kurang dari 2.000 baris), clone, jalankan di lingkungan lokal, jalankan test dan static analysis, review kode dengan checklist. Catat temuan untuk dirimu sendiri; bila menemukan bug yang nyata, laporkan secara sopan lewat jalur resmi proyek.",
+  "hasil": "Pengalaman memahami dan menilai kode asing."
+ },
+ {
+  "nomor": 249,
+  "judul": "Cheatsheet Pribadi: Linux, Git, HTTP, SQL, Security",
+  "fokus": "Software Development + Cyber Security + Linux",
+  "materi": "Referensi pribadi yang dibuat dari pengalaman sendiri.",
+  "praktik": "Susun cheatsheet.md berisi perintah, pola, dan checklist yang benar-benar kamu pakai (Linux, Git, curl, SQL, header keamanan, checklist code review dan hardening). Hapus apa pun yang belum kamu pahami atau uji.",
+  "hasil": "Referensi kerja yang ringkas dan dapat dipercaya."
+ },
+ {
+  "nomor": 250,
+  "judul": "Demo Terpadu dan Retrospektif",
+  "fokus": "Software Development + Cyber Security + Linux + AI",
+  "materi": "Menunjukkan dan merefleksikan kemampuan yang sudah terbentuk.",
+  "praktik": "Rekam atau tulis demo 10–15 menit: dari kode ke deploy ke serangan lab sampai perbaikan dan uji ulang pada satu aplikasi, lengkap dengan peran AI dan di mana AI salah. Tulis retrospektif: apa yang efektif, apa yang lemah, dan bukti dari repo.",
+  "hasil": "Demo terdokumentasi dan retrospektif yang jujur sebagai penutup perjalanan."
+ }
+]

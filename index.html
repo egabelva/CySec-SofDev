@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roadmap Belajar 250 Modul</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar" id="topbar" hidden>
+    <span class="topbar-title">Roadmap Pribadi BOSS EGA #calonteknik</span>
+    <div class="topbar-user">
+      <span id="user-label">ID 1</span>
+      <button type="button" class="btn btn-ghost" id="btn-logout">Keluar</button>
+    </div>
+  </header>
+
+  <main class="stage">
+
+    <!-- Halaman login -->
+    <section class="screen" id="screen-login" aria-labelledby="login-title" hidden>
+      <div class="panel panel-login">
+        <h1 class="display" id="login-title">Roadmap 250 Modul</h1>
+        <p class="muted">FILL YOUR ID(8 digit tidak berurutan).</p>
+        <form id="login-form" novalidate>
+          <label for="login-id" class="field-label">ID pengguna</label>
+          <input id="login-id" class="input-id" type="text" inputmode="numeric" maxlength="1" autocomplete="off" aria-describedby="login-error">
+          <p class="error" id="login-error" role="alert"></p>
+          <button type="submit" class="btn btn-primary" id="btn-login">Masuk</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Halaman modul -->
+    <section class="screen" id="screen-module" aria-labelledby="mod-title" hidden>
+      <article class="panel panel-module">
+        <h1 class="display mod-title" id="mod-title" tabindex="-1"></h1>
+        <div class="mod-meta">
+          <span class="mod-counter" id="mod-counter"></span>
+          <span class="mod-status" id="mod-status"></span>
+        </div>
+
+        <dl class="mod-fields">
+          <div class="mod-field">
+            <dt>Fokus-!!!!</dt>
+            <dd id="mod-fokus"></dd>
+          </div>
+          <div class="mod-field">
+            <dt>Materi-$$$$</dt>
+            <dd id="mod-materi"></dd>
+          </div>
+          <div class="mod-field">
+            <dt>Praktik-%%%%</dt>
+            <dd id="mod-praktik"></dd>
+          </div>
+          <div class="mod-field">
+            <dt>Hasil-====</dt>
+            <dd id="mod-hasil"></dd>
+          </div>
+        </dl>
+
+        <p class="hint" id="mod-hint" role="status"></p>
+        <p class="error" id="mod-error" role="alert"></p>
+
+        <nav class="mod-actions" aria-label="Navigasi modul">
+          <button type="button" class="btn" id="btn-prev">Before</button>
+          <button type="button" class="btn btn-primary" id="btn-done">Done &amp; Lanjut</button>
+          <button type="button" class="btn" id="btn-next">Next</button>
+        </nav>
+      </article>
+    </section>
+
+    <!-- Halaman selesai -->
+    <section class="screen" id="screen-done" aria-labelledby="done-title" hidden>
+      <div class="panel panel-login">
+        <h1 class="display" id="done-title" tabindex="-1">Roadmap selesai</h1>
+        <p class="muted">Kamu sudah menyelesaikan semua 250 modul.</p>
+        <button type="button" class="btn btn-primary" id="btn-done-logout">Keluar</button>
+      </div>
+    </section>
+
+    <!-- Pesan kesalahan fatal (data / penyimpanan gagal) -->
+    <section class="screen" id="screen-fatal" hidden>
+      <div class="panel panel-login">
+        <h1 class="display">Tidak bisa dimuat</h1>
+        <p class="error" id="fatal-message"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dialog konfirmasi Selesai -->
+  <dialog id="confirm-dialog" class="dialog" aria-labelledby="confirm-title">
+    <form method="dialog" class="dialog-body">
+      <h2 class="display dialog-title" id="confirm-title">Tandai selesai?</h2>
+      <p id="confirm-text" class="muted"></p>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="confirm-cancel">Batal</button>
+        <button type="button" class="btn btn-primary" id="confirm-ok">Ya, selesai</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
